@@ -1,6 +1,6 @@
 package Primitives;
 
-public class Vector {
+public class Vector implements Comparable<Vector>{
     private Point3D head;
 
     ///constractor
@@ -27,10 +27,8 @@ public class Vector {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (obj instanceof Vector)
-            return ((Vector)obj).head.equals(this.head);
-        return false;
+    public int compareTo(Vector vector) {
+        return this.head.compareTo(vector.head);
     }
 
     @Override

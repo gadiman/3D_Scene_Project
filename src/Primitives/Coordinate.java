@@ -1,6 +1,6 @@
 package Primitives;
 
-public class Coordinate {
+public class Coordinate implements Comparable<Coordinate>{
     private double coordinate;
 
     ///constractor
@@ -26,12 +26,12 @@ public class Coordinate {
         this.coordinate = coordinate;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if (obj instanceof Coordinate)
-            return ((Coordinate)obj).coordinate==this.coordinate;
-        return false;
+
+@Override
+    public int compareTo(Coordinate coordinate) {
+        return Double.compare(this.coordinate, coordinate.coordinate);
     }
+
 
     @Override
     public String toString() {

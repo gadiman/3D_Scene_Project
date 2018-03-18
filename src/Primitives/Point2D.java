@@ -1,13 +1,13 @@
 package Primitives;
 
-public class Point2D {
+public class Point2D  implements Comparable<Point2D>{
     protected Coordinate x;
     protected Coordinate y;
 
-    ///constractor
+    ///constractors
     public Point2D(Coordinate x, Coordinate y) {
-        this.x = x;
-        this.y = y;
+        this.x = new Coordinate(x);
+        this.y = new Coordinate(y);
     }
 
     ///defolt constracyor
@@ -23,26 +23,27 @@ public class Point2D {
     }
 
     public Coordinate getX() {
-        return x;
+        return new Coordinate(x);
     }
 
     public void setX(Coordinate x) {
-        this.x = x;
+        this.x = new Coordinate(x);
     }
 
     public Coordinate getY() {
-        return y;
+        return new Coordinate(y);
     }
 
     public void setY(Coordinate y) {
-        this.y = y;
+        this.y = new Coordinate(y);
     }
-//github
-    @Override
-    public boolean equals(Object obj) {
-        if (obj instanceof Point2D)
-            return ((Point2D)obj).x.equals(this.x)&&((Point2D)obj).y.equals(this.y);
-        return false;
+
+@Override
+    public int compareTo(Point2D point2D) {
+        if (this.x.compareTo(point2D.x) == 0 &&
+                this.y.compareTo(point2D.y) == 0)
+            return 0;
+        return 1;
     }
 
     @Override

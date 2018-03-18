@@ -3,7 +3,7 @@ package Primitives;
 public class Point3D extends Point2D{
     private Coordinate z;
 
-    ///constractor
+    ///constractors
     public Point3D(Coordinate x, Coordinate y, Coordinate z) {
         super(x, y);
         this.z = z;
@@ -20,20 +20,20 @@ public class Point3D extends Point2D{
         super(new Coordinate(point3d.getX()), new Coordinate(point3d.getY()));
         this.z = new Coordinate(point3d.getZ());
     }
-
     public Coordinate getZ() {
-        return z;
+        return new Coordinate(z);
     }
 
     public void setZ(Coordinate z) {
-        this.z = z;
+        this.z = new Coordinate(z);
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if (obj instanceof Point3D)
-            return ((Point3D)obj).x.equals(this.x)&&((Point3D)obj).y.equals(this.y)&&((Point3D)obj).z.equals(this.y);
-        return false;
+    public int compareTo(Point3D point3D) {
+
+        if (((Point2D)this).compareTo((Point2D)point3D) == 0)
+            if (this.z.compareTo(point3D.z) == 0)
+                return 0;
+        return 1;
     }
 
     @Override
