@@ -16,7 +16,7 @@ public class Point2D  implements Comparable<Point2D>{
         y = new Coordinate(0);
     }
 
-    ///copy constractor
+    ///copy constractors
     public Point2D(Point2D point2d){
         x=new Coordinate(point2d.x);
         y=new Coordinate(point2d.y);
