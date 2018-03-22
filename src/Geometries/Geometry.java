@@ -9,8 +9,5 @@ import Primitives.Ray;
 import Primitives.Vector;
 
 public abstract class Geometry {
-
-
-	
-
+    int בדיקה = 9;
 }
