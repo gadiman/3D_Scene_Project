@@ -15,6 +15,7 @@ class CoordinateTest {
     @Test
     void getCoordinate() {
         assertEquals(tmp.getCoordinate(),2.4);
+
     }
 
     @Test
