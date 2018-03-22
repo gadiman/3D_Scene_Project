@@ -4,24 +4,24 @@ public class Point2D  implements Comparable<Point2D>{
     protected Coordinate x;
     protected Coordinate y;
 
-    ///constractors
+    //***************************************constructors***************************//
     public Point2D(Coordinate x, Coordinate y) {
         this.x = new Coordinate(x);
         this.y = new Coordinate(y);
     }
 
-    ///defolt constracyor
+    ///default constructor
     public Point2D() {
         x = new Coordinate(0);
         y = new Coordinate(0);
     }
 
-    ///copy constractors
+    ///copy constructors
     public Point2D(Point2D point2d){
         x=new Coordinate(point2d.x);
         y=new Coordinate(point2d.y);
     }
-
+//*****************************getters and srtters********************************//
     public Coordinate getX() {
         return new Coordinate(x);
     }
@@ -38,7 +38,9 @@ public class Point2D  implements Comparable<Point2D>{
         this.y = new Coordinate(y);
     }
 
-@Override
+
+//************************************fuctions************************************//
+    @Override
     public int compareTo(Point2D point2D) {
         if (this.x.compareTo(point2D.x) == 0 &&
                 this.y.compareTo(point2D.y) == 0)

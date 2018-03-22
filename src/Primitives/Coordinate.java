@@ -3,21 +3,22 @@ package Primitives;
 public class Coordinate implements Comparable<Coordinate>{
     private double coordinate;
 
-    ///constractor
+    //******************************constructors************************//
     public Coordinate(double coordinate) {
         this.coordinate = coordinate;
     }
 
-    ///defolt constractor
+    //default constructor
     public Coordinate() {
         coordinate = 0;
     }
 
-    ///copy constractor
+    ///copy constructor
     public Coordinate(Coordinate c) {
         this.coordinate = c.coordinate;
     }
 
+//********************Getters and seters**************************************************//
     public double getCoordinate() {
         return coordinate;
     }
@@ -26,8 +27,8 @@ public class Coordinate implements Comparable<Coordinate>{
         this.coordinate = coordinate;
     }
 
-
-@Override
+//******************************functions************************************************//
+    @Override
     public int compareTo(Coordinate coordinate) {
         return Double.compare(this.coordinate, coordinate.coordinate);
     }
