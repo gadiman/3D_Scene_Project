@@ -1,42 +1,42 @@
 package Primitives;
 
 public class Ray {
-    private Point3D point3D;
-    private Vector vector;
+    private Point3D _POO;
+    private Vector _direction;
 
     //***********************************constructor***********************************//
     public Ray(Point3D p, Vector v) {
-        this.point3D = p;
-        this.vector = v;
+        this._POO = p;
+        this._direction = v;
     }
 
     ///default constructor
     public Ray() {
-        point3D = new Point3D(new Coordinate(0), new Coordinate(0), new Coordinate(0));
-        vector=new Vector(new Point3D(new Coordinate(0), new Coordinate(0), new Coordinate(0)));
+        _POO = new Point3D(new Coordinate(0), new Coordinate(0), new Coordinate(0));
+        _direction=new Vector(new Point3D(new Coordinate(0), new Coordinate(0), new Coordinate(0)));
     }
 
     ///copy constructor
     public Ray(Ray ray){
-        point3D=new Point3D(ray.point3D);
-        vector=new Vector(ray.vector);
+        _POO=new Point3D(ray._POO);
+        _direction=new Vector(ray._direction);
     }
 
 //***************************************getters and setters***********************************//
     public Point3D getPoint3D() {
-        return new Point3D(point3D);
+        return new Point3D(_POO);
     }
 
     public void setPoint3D(Point3D point3D) {
-        this.point3D = new Point3D(point3D);
+        this._POO = new Point3D(point3D);
     }
 
     public Vector getVector() {
-        return new Vector(vector);
+        return new Vector(_direction);
     }
 
     public void setVector(Vector vector) {
-        this.vector = new Vector(vector);
+        this._direction = new Vector(vector);
     }
 
 
@@ -44,15 +44,15 @@ public class Ray {
     @Override
     public boolean equals(Object obj) {
         if (obj instanceof Ray)
-            return ((Ray)obj).vector.equals(this.vector)&&((Ray)obj).point3D.equals(this.point3D);
+            return ((Ray)obj)._direction.equals(this._direction)&&((Ray)obj)._POO.equals(this._POO);
         return false;
     }
 
     @Override
     public String toString() {
         System.out.println("ray: ");
-        vector.toString();
-        point3D.toString();
+        _direction.toString();
+        _POO.toString();
         return "";
     }
 }

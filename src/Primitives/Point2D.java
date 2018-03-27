@@ -1,49 +1,49 @@
 package Primitives;
 
 public class Point2D  implements Comparable<Point2D>{
-    protected Coordinate x;
-    protected Coordinate y;
+    protected Coordinate _x;
+    protected Coordinate _y;
 
     //***************************************constructors***************************//
     public Point2D(Coordinate x, Coordinate y) {
-        this.x = new Coordinate(x);
-        this.y = new Coordinate(y);
+        this._x = new Coordinate(x);
+        this._y = new Coordinate(y);
     }
 
     ///default constructor
     public Point2D() {
-        x = new Coordinate(0);
-        y = new Coordinate(0);
+        _x = new Coordinate(0);
+        _y = new Coordinate(0);
     }
 
     ///copy constructors
     public Point2D(Point2D point2d){
-        x=new Coordinate(point2d.x);
-        y=new Coordinate(point2d.y);
+        _x=new Coordinate(point2d._x);
+        _y=new Coordinate(point2d._y);
     }
 //*****************************getters and srtters********************************//
     public Coordinate getX() {
-        return new Coordinate(x);
+        return new Coordinate(_x);
     }
 
     public void setX(Coordinate x) {
-        this.x = new Coordinate(x);
+        this._x = new Coordinate(x);
     }
 
     public Coordinate getY() {
-        return new Coordinate(y);
+        return new Coordinate(_y);
     }
 
     public void setY(Coordinate y) {
-        this.y = new Coordinate(y);
+        this._y = new Coordinate(y);
     }
 
 
 //************************************fuctions************************************//
     @Override
     public int compareTo(Point2D point2D) {
-        if (this.x.compareTo(point2D.x) == 0 &&
-                this.y.compareTo(point2D.y) == 0)
+        if (this._x.compareTo(point2D._x) == 0 &&
+                this._y.compareTo(point2D._y) == 0)
             return 0;
         return 1;
     }
@@ -51,8 +51,8 @@ public class Point2D  implements Comparable<Point2D>{
     @Override
     public String toString() {
         System.out.println("point2d: ");
-        x.toString();
-        y.toString();
+        _x.toString();
+        _y.toString();
         return "";
     }
 }
