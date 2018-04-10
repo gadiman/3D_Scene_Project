@@ -41,6 +41,4 @@ class RayTest {
         AssertJUnit.assertTrue(tmp3.getVector().compareTo(new Vector(new Primitives.Point3D
                 (new Coordinate(3),new Coordinate(2),new Coordinate(1))))==0);
     }
-
-
 }

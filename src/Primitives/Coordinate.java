@@ -1,6 +1,6 @@
 package Primitives;
 
-public class Coordinate implements Comparable<Coordinate>{
+public class Coordinate implements Comparable<Coordinate> {
     private double _coordinate;
 
     //******************************constructors************************//
@@ -18,7 +18,7 @@ public class Coordinate implements Comparable<Coordinate>{
         this._coordinate = c._coordinate;
     }
 
-//********************Getters and seters**************************************************//
+    //********************Getters and seters**************************************************//
     public double getCoordinate() {
         return _coordinate;
     }
@@ -27,16 +27,23 @@ public class Coordinate implements Comparable<Coordinate>{
         this._coordinate = coordinate;
     }
 
-//******************************functions************************************************//
+    //******************************functions************************************************//
     @Override
     public int compareTo(Coordinate coordinate) {
         return Double.compare(this._coordinate, coordinate._coordinate);
     }
 
-
     @Override
     public String toString() {
-        System.out.println("coordinate: "+ _coordinate);
+        System.out.println("coordinate: " + _coordinate);
         return "";
+    }
+
+    public void add(Coordinate c) {
+        this._coordinate += c.getCoordinate();
+    }
+
+    public void substract(Coordinate c) {
+        this._coordinate -= c.getCoordinate();
     }
 }
