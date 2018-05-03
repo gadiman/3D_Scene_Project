@@ -20,6 +20,15 @@ public class Vector implements Comparable<Vector> {
         _head = new Point3D(vector._head);
     }
 
+    public Vector(Point3D p1, Point3D p2){
+
+        this(new Point3D(p2.getX().getCoordinate() - p1.getX().getCoordinate(),
+                p2.getY().getCoordinate() - p1.getY().getCoordinate(),
+                p2.getZ().getCoordinate() - p1.getZ().getCoordinate()));
+
+
+    }
+
 
     //************************************getters and setters****************************************//
     public Point3D getHead() {
@@ -52,10 +61,11 @@ public class Vector implements Comparable<Vector> {
         this._head.subvector(v);
     }
 
-    public void multInScalar(Double d) {
+    public Vector multInScalar(Double d) {
         _head.getX().setCoordinate(_head.getX().getCoordinate() * d);
         _head.getY().setCoordinate(_head.getY().getCoordinate() * d);
         _head.getZ().setCoordinate(_head.getZ().getCoordinate() * d);
+        return null;
     }
 
     double X = _head.getX().getCoordinate();

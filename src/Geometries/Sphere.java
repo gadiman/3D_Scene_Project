@@ -49,7 +49,14 @@ public class Sphere extends RadialGeometry implements Comparable<Sphere>{
         return "";
     }
 
-    public Vector getNormal(Point3D p) {
-        return null;
+    public Vector getNormal(Point3D p){
+        Vector Normal= new Vector(_center, p);
+        try {
+            Normal.normalize();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return Normal;
+
     }
 }

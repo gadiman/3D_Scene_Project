@@ -70,6 +70,11 @@ public class Triangle extends Geometry implements Comparable<Triangle> {
 
     @Override
     public Vector getNormal(Point3D P) {
-        return null;
+      Vector FirstVec = new Vector(_p1,_p2);
+      Vector SecondVec = new Vector(_p1,_p3);
+      Vector NormalVec= FirstVec.crossProduct(SecondVec);
+      NormalVec.multInScalar(-1.0);
+      return NormalVec;
+
     }
 }

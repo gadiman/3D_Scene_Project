@@ -13,7 +13,7 @@ public abstract class Geometry {
     public Geometry() {
     }
 
-    ///default constructor
+    //copy constructor
     public Geometry(Geometry geometry) {
 
     }
