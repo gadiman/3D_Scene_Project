@@ -2,6 +2,10 @@ package Geometries;
 
 import Primitives.Point3D;
 import Primitives.Vector;
+import Primitives.Ray;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Triangle extends Geometry implements Comparable<Triangle> {
     private Point3D _p1;
@@ -70,11 +74,57 @@ public class Triangle extends Geometry implements Comparable<Triangle> {
 
     @Override
     public Vector getNormal(Point3D P) {
-      Vector FirstVec = new Vector(_p1,_p2);
-      Vector SecondVec = new Vector(_p1,_p3);
-      Vector NormalVec= FirstVec.crossProduct(SecondVec);
-      NormalVec.multInScalar(-1.0);
-      return NormalVec;
+        Vector FirstVec = new Vector(_p1, _p2);
+        Vector SecondVec = new Vector(_p1, _p3);
+        Vector NormalVec = FirstVec.crossProduct(SecondVec);
+        NormalVec.multInScalar(-1.0);
+        return NormalVec;
 
+    }
+
+    @Override
+    public List<Point3D> FindIntersections(Ray ray) {
+        List<Point3D> intersectionPoints = new ArrayList<Point3D>(1);
+
+        // Intersecting the triangular plane
+        Point3D P0 = ray.getPoint3D();
+        Vector N = getNormal(null);
+        Plane plane = new Plane(_p3,N);
+
+        if (plane.FindIntersections(ray).isEmpty())
+            return intersectionPoints;
+
+        Point3D intersectionPlane = plane.FindIntersections(ray).get(0);
+
+        // Checking if the interseculating point is bounded by the triangle
+        Vector P_P0 = new Vector(P0, intersectionPlane);
+        // Checking 1/3 triangular side
+        Double Side1=Chacking_Side(P_P0,ray,this._p1,this._p2);
+        // Checking 2/3 triangular side
+        Double Side2=Chacking_Side(P_P0,ray,this._p2,this._p3);
+        // Checking 1/3 triangular side
+        Double Side3=Chacking_Side(P_P0,ray,this._p3,this._p1);
+
+
+        if (((Side1 > 0) && (Side2 > 0) && (Side3 > 0)) ||
+                ((Side1 < 0) && (Side2 < 0) && (Side3 < 0))){
+            intersectionPoints.add(intersectionPlane);
+        }
+
+        return intersectionPoints;
+    }
+
+    private Double Chacking_Side( Vector V, Ray R, Point3D x, Point3D y){
+        Point3D center = R.getPoint3D();
+        Vector V1_1 = new Vector(center, x);
+        Vector V2_1 = new Vector(center, y);
+        Vector N1 = V1_1.crossProduct(V2_1);
+        try {
+            N1.normalize();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        double Side = -V.dotProduct(N1);
+        return Side;
     }
 }

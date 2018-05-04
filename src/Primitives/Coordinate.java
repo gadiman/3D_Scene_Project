@@ -19,9 +19,7 @@ public class Coordinate implements Comparable<Coordinate> {
     }
 
     //********************Getters and seters**************************************************//
-    public double getCoordinate() {
-        return _coordinate;
-    }
+    public double getCoordinate() { return _coordinate; }
 
     public void setCoordinate(double coordinate) {
         this._coordinate = coordinate;

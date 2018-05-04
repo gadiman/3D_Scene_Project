@@ -1,7 +1,11 @@
 package Geometries;
 
 import Primitives.Point3D;
+import Primitives.Ray;
 import Primitives.Vector;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Plane extends Geometry implements Comparable<Plane>{
 
@@ -59,6 +63,27 @@ public class Plane extends Geometry implements Comparable<Plane>{
     @Override
     public Vector getNormal(Point3D p) {
         return null;
+    }
+
+    @Override
+    public List<Point3D> FindIntersections(Ray ray) {
+        List<Point3D> intersectionPoint = new ArrayList<Point3D>(1);
+
+        Point3D P0 = ray.getPoint3D();
+        Point3D Q0 = this.getPoint();
+        Vector N = this.getNormal(null);
+        Vector V = ray.getVector();
+
+        Vector v = new Vector (Q0, P0);
+        double t = (N.dotProduct(v) * -1) / N.dotProduct(V);
+
+        if (t >= 0){
+            V.multInScalar(t);
+            P0.addVectorToPoint(V);
+            intersectionPoint.add(P0);
+        }
+        return intersectionPoint;
+
     }
 }
 

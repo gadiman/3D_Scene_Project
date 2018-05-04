@@ -36,15 +36,12 @@ public class Point3D extends Point2D implements Comparable<Point2D> {
     }
 
     //********************************functions**************************************//
-    @Override
-    public int compareTo(Point2D point2D) {
-        if (point2D instanceof Point3D) {
-            if (((Point2D) this).compareTo((Point2D) point2D) == 0)
-                if (this._z.compareTo(((Point3D)point2D)._z) == 0)
+
+    public int compareTo(Point3D P3d) {
+        if (((Point2D)this).compareTo((Point2D)P3d) == 0)
+            if (this._z.compareTo(P3d._z) == 0)
                     return 0;
             return 1;
-        }
-        throw new ArithmeticException("this not Point3D");
     }
 
     @Override
