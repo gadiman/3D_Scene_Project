@@ -7,7 +7,7 @@ import Primitives.Vector;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Plane extends Geometry implements Comparable<Plane>{
+public class Plane extends Geometry implements Comparable<Plane> {
 
     protected Point3D point;
     protected Vector normal;
@@ -29,6 +29,7 @@ public class Plane extends Geometry implements Comparable<Plane>{
         point = plane.getPoint();
         normal = plane.getNormal();
     }
+
     //***************************getters and setters***********************************//
     public Point3D getPoint() {
         return new Point3D(point);
@@ -48,21 +49,26 @@ public class Plane extends Geometry implements Comparable<Plane>{
 
     //********************************functions***************************************//
     @Override
-    public int compareTo(Plane plane){
-        if (point.compareTo(plane.point)==0&&normal.compareTo(plane.normal)==0)
+    public int compareTo(Plane plane) {
+        if (point.compareTo(plane.point) == 0 && normal.compareTo(plane.normal) == 0)
             return 0;
         return 1;
     }
 
     @Override
-    public String toString(){
-        System.out.println("point: "+point.toString()+"normal: "+normal.toString());
+    public String toString() {
+        System.out.println("point: " + point.toString() + "normal: " + normal.toString());
         return "";
     }
 
     @Override
     public Vector getNormal(Point3D p) {
-        return null;
+        try {
+            normal.normalize();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return normal;
     }
 
     @Override
@@ -74,10 +80,10 @@ public class Plane extends Geometry implements Comparable<Plane>{
         Vector N = this.getNormal(null);
         Vector V = ray.getVector();
 
-        Vector v = new Vector (Q0, P0);
+        Vector v = new Vector(Q0, P0);
         double t = (N.dotProduct(v) * -1) / N.dotProduct(V);
 
-        if (t >= 0){
+        if (t >= 0) {
             V.multInScalar(t);
             P0.addVectorToPoint(V);
             intersectionPoint.add(P0);

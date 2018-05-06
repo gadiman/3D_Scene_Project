@@ -78,8 +78,12 @@ public class Triangle extends Geometry implements Comparable<Triangle> {
         Vector SecondVec = new Vector(_p1, _p3);
         Vector NormalVec = FirstVec.crossProduct(SecondVec);
         NormalVec.multInScalar(-1.0);
+        try {
+            NormalVec.normalize();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return NormalVec;
-
     }
 
     @Override
