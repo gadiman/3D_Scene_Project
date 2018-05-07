@@ -18,7 +18,6 @@ public class Camera {
         _center = new Point3D(0, 0, 10);
         Vup = new Vector(new Point3D(1.0, 0.0, 0.0));
         Vto = new Vector(new Point3D(0.0, 0.0, -1.0));
-
         Vright = Vup.crossProduct(Vto);
     }
 
@@ -35,7 +34,7 @@ public class Camera {
         Vup = new Vector(vUp);
         Vto = new Vector(vTo);
         Vright = Vup.crossProduct(Vto);
-        Vup = Vto.crossProduct(Vright);
+        Vup = Vto.crossProduct(Vright);//////?????????????????
 
         try {
             Vup.normalize();
@@ -46,14 +45,12 @@ public class Camera {
             Vto.normalize();
         } catch (Exception e) {
             e.printStackTrace();
-            e.printStackTrace();
         }
         try {
             Vright.normalize();
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
-
     }
 
     //********************************getters and setters**********************//
@@ -85,14 +82,13 @@ public class Camera {
         this._center = new Point3D(center);
     }
 
-
     //********************************functions**************************************//
     public Ray constructRayThroughPixel(int Nx, int Ny, double x, double y, double screenDist,
                                         double screenWidth, double screenHeight) {
         //Calculating Pc point
-        Point3D Pc =new Point3D(Calculat_Pc(screenDist));
+        Point3D Pc = new Point3D(Calculat_Pc(screenDist));
         //Calculating P point
-        Point3D P=new Point3D(Calculat_P(Nx,Ny,x,y,screenDist,screenWidth,screenHeight,Pc));
+        Point3D P = new Point3D(Calculat_P(Nx, Ny, x, y, screenDist, screenWidth, screenHeight, Pc));
         // constructing ray between P0 and the intersection point
         Vector ray = new Vector(_center, P);
         try {
@@ -127,24 +123,15 @@ public class Camera {
         Vector vRight = new Vector(Vright);
         Vector vUp = new Vector(Vup);
 
-        vRight.multInScalar(((x - (Nx / 2.0)) * Rx + 0.5 * Rx));
-        vUp.multInScalar(((y - (Ny / 2.0)) * Ry + 0.5 * Ry));
+        vRight.multInScalar(((x - (Nx / 2)) * Rx + 0.5 * Rx));
+        vUp.multInScalar(((y - (Ny / 2)) * Ry + 0.5 * Ry));
         vRight.subtract(vUp);
-
         Pc.addVectorToPoint(vRight);
-
         Point3D P = new Point3D(Pc);
         return P;
-
-
     }
 
-
     public String toString() {
-        return "Vto: " + Vto + "\n" +
-                "Vup: " + Vup + "\n" +
-                "Vright:" + Vright + ".";
-
-
+        return "Vto: " + Vto + "\n" + "Vup: " + Vup + "\n" + "Vright:" + Vright + ".";
     }
 }

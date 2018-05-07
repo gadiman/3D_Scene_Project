@@ -61,7 +61,6 @@ public class Sphere extends RadialGeometry implements Comparable<Sphere>{
             e.printStackTrace();
         }
         return Normal;
-
     }
 
     @Override

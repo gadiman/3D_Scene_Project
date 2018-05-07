@@ -21,7 +21,6 @@ public class Vector implements Comparable<Vector> {
     }
 
     public Vector(Point3D p1, Point3D p2){
-
         this(new Point3D(p2.getX().getCoordinate() - p1.getX().getCoordinate(),
                 p2.getY().getCoordinate() - p1.getY().getCoordinate(),
                 p2.getZ().getCoordinate() - p1.getZ().getCoordinate()));
@@ -73,7 +72,6 @@ public class Vector implements Comparable<Vector> {
 
 
     public double dotProduct(Vector v) {
-
         double X = _head.getX().getCoordinate();
         double Y = _head.getY().getCoordinate();
         double Z = _head.getZ().getCoordinate();
