@@ -81,7 +81,7 @@ public class Plane extends Geometry implements Comparable<Plane> {
         Vector V = ray.getVector();
 
         Vector v = new Vector(Q0, P0);
-        double t = (N.dotProduct(v) * -1) / N.dotProduct(V);
+        double t = (N.dotProduct(v) * -1) / N.dotProduct(V);////////////0
 
         if (t >= 0) {
             V.multInScalar(t);
