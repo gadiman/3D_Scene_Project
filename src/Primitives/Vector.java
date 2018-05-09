@@ -21,9 +21,9 @@ public class Vector implements Comparable<Vector> {
     }
 
     public Vector(Point3D p1, Point3D p2){
-        this(new Point3D(p2.getX().getCoordinate() - p1.getX().getCoordinate(),
+        this(p2.getX().getCoordinate() - p1.getX().getCoordinate(),
                 p2.getY().getCoordinate() - p1.getY().getCoordinate(),
-                p2.getZ().getCoordinate() - p1.getZ().getCoordinate()));
+                p2.getZ().getCoordinate() - p1.getZ().getCoordinate());
     }
 
     public Vector(double x,  double y, double z){

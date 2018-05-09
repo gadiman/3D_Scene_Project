@@ -5,9 +5,16 @@ public class Ray {
     private Vector _direction;
 
     //***********************************constructor***********************************//
-    public Ray(Point3D p, Vector v) {
-        this._POO = p;
-        this._direction = v;
+
+
+    public Ray(Point3D poo, Vector direction){
+        this._POO = new Point3D(poo);
+        this._direction = new Vector (direction);
+        try {
+            this._direction.normalize();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     ///default constructor

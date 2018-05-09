@@ -77,12 +77,13 @@ public class Triangle extends Geometry implements Comparable<Triangle> {
         Vector FirstVec = new Vector(_p1, _p2);
         Vector SecondVec = new Vector(_p1, _p3);
         Vector NormalVec = FirstVec.crossProduct(SecondVec);
-        NormalVec.multInScalar(-1.0);
+
         try {
             NormalVec.normalize();
         } catch (Exception e) {
             e.printStackTrace();
         }
+        NormalVec.multInScalar(-1.0);
         return NormalVec;
     }
 
@@ -103,11 +104,11 @@ public class Triangle extends Geometry implements Comparable<Triangle> {
         // Checking if the interseculating point is bounded by the triangle
         Vector P_P0 = new Vector(P0, intersectionPlane);
         // Checking 1/3 triangular side
-        Double Side1=Chacking_Side(P_P0,ray,this._p1,this._p2);
+        Double Side1=Chacking_Side(P_P0,ray,P0,this._p1,this._p2);
         // Checking 2/3 triangular side
-        Double Side2=Chacking_Side(P_P0,ray,this._p2,this._p3);
+        Double Side2=Chacking_Side(P_P0,ray,P0,this._p2,this._p3);
         // Checking 1/3 triangular side
-        Double Side3=Chacking_Side(P_P0,ray,this._p3,this._p1);
+        Double Side3=Chacking_Side(P_P0,ray,P0,this._p3,this._p1);
 
 
         if (((Side1 > 0) && (Side2 > 0) && (Side3 > 0)) ||
@@ -118,10 +119,10 @@ public class Triangle extends Geometry implements Comparable<Triangle> {
         return intersectionPoints;
     }
 
-    private Double Chacking_Side( Vector V, Ray R, Point3D x, Point3D y){
-        Point3D center = R.getPoint3D();
-        Vector V1_1 = new Vector(center, x);
-        Vector V2_1 = new Vector(center, y);
+    private Double Chacking_Side( Vector V, Ray R,Point3D P0, Point3D x, Point3D y){
+
+        Vector V1_1 = new Vector(P0, x);
+        Vector V2_1 = new Vector(P0, y);
         Vector N1 = V1_1.crossProduct(V2_1);
         try {
             N1.normalize();

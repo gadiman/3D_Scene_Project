@@ -123,8 +123,8 @@ public class Camera {
         Vector vRight = new Vector(Vright);
         Vector vUp = new Vector(Vup);
 
-        vRight.multInScalar(((x - (Nx / 2)) * Rx + 0.5 * Rx));
-        vUp.multInScalar(((y - (Ny / 2)) * Ry + 0.5 * Ry));
+        vRight.multInScalar(((x - (Nx / 2.0)) * Rx + 0.5 * Rx));
+        vUp.multInScalar(((y - (Ny / 2.0)) * Ry + 0.5 * Ry));
         vRight.subtract(vUp);
         Pc.addVectorToPoint(vRight);
         Point3D P = new Point3D(Pc);
