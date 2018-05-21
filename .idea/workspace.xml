@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bea094ad-def7-475d-9cec-f7a0ba2ab531" name="Default" comment="כלוםם">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Unitest/RenderTest.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="bea094ad-def7-475d-9cec-f7a0ba2ab531" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Renderer/Render.java" afterPath="$PROJECT_DIR$/src/Renderer/Render.java" />
-      <change beforePath="$PROJECT_DIR$/src/Renderer/renderer.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Unitest/ImageWriterTest.java" afterPath="$PROJECT_DIR$/src/Unitest/ImageWriterTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -1414,7 +1409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1525615877681</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="כלוםם">
+      <created>1526916736829</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1526916736829</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
