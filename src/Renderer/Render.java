@@ -29,15 +29,15 @@ public class Render {
     //*******************************getters and setters****************************//
 
     public Scene getScene() {
-        return scene;
+        return new Scene(scene);
     }
 
     public void setScene(Scene scene) {
-        this.scene = new Scene(scene);
+        this.scene = new Scene(this.scene);
     }
 
     public ImageWriter getImageWriter() {
-        return imageWriter;
+        return new ImageWriter(this.imageWriter);
     }
 
     public void setImageWriter(ImageWriter imageWriter) {
@@ -48,33 +48,31 @@ public class Render {
 
     public void renderImage() {
 
-        for (int i = 0; i < imageWriter.getHeight(); i++) {
-            for (int j = 0; j < imageWriter.getWidth(); j++) {
+        for (int i = 0; i < this.imageWriter.getHeight(); i++) {
+            for (int j = 0; j < this.imageWriter.getWidth(); j++) {
 
-                Ray ray = scene.get_camera().constructRayThroughPixel(imageWriter.getNx(), imageWriter.getNy(), j, i,
-                        scene.getScreenDistance(), imageWriter.getWidth(), imageWriter.getHeight());
+                Ray ray = this.scene.get_camera().constructRayThroughPixel(this.imageWriter.getNx(), this.imageWriter.getNy(), j, i,
+                        scene.getScreenDistance(), this.imageWriter.getWidth(), this.imageWriter.getHeight());
 
-                /*Map.Entry<Geometry, Point3D> entry = findClosesntIntersection(ray);
-
-                if (entry == null) {
-                    imageWriter.writePixel(j, i, scene.getBackgroundColor());
-                } else {
-                    imageWriter.writePixel(j, i, calcColor(entry.getKey(), entry.getValue(), ray));
-                }*/
             }
         }
     }
 
     public void printGrid(int interval) {
-        int h = imageWriter.getHeight();
-        int w = imageWriter.getWidth();
+        int h = this.imageWriter.getHeight();
+        int w = this.imageWriter.getWidth();
         for (int i = 0; i < h; i++) {
             for (int j = 0; j < w; j++) {
                 if (i % interval == 0 || j % interval == 0)
-                    imageWriter.writePixel(j, i, 255, 255, 255);
+                    this.imageWriter.writePixel(j, i, 255, 255, 255);
             }
         }
     }
+
+    public void writeToImage() {
+        imageWriter.writeToimage();
+    }
+
 
     private Color calcColor(Point3D p) {
         return scene.get_ambientLight().getIntensity();
@@ -116,5 +114,7 @@ public class Render {
         Color _color = new Color(R, G, B);
         return _color;
     }
+
+
 
 }

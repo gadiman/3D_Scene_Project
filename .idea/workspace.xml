@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bea094ad-def7-475d-9cec-f7a0ba2ab531" name="Default" comment="כלוםם">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Renderer/Render.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Unitest/RenderTest.java" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Geometries/Geometry.java" afterPath="$PROJECT_DIR$/src/Geometries/Geometry.java" />
-      <change beforePath="$PROJECT_DIR$/src/Renderer/ImageWriter.java" afterPath="$PROJECT_DIR$/src/Renderer/ImageWriter.java" />
+      <change beforePath="$PROJECT_DIR$/src/Renderer/Render.java" afterPath="$PROJECT_DIR$/src/Renderer/Render.java" />
+      <change beforePath="$PROJECT_DIR$/src/Renderer/renderer.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Unitest/ImageWriterTest.java" afterPath="$PROJECT_DIR$/src/Unitest/ImageWriterTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,15 +22,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Camera.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Elements/Camera.java">
+      <file leaf-file-name="ImageWriterTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Unitest/ImageWriterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="84" column="51" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+            <state relative-caret-position="319">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3852#3853#0" expanded="true" />
-                <element signature="e#3945#3946#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -38,8 +37,8 @@
       <file leaf-file-name="Scene.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scene/Scene.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-544">
-              <caret line="44" column="39" lean-forward="true" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
+            <state relative-caret-position="-926">
+              <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1435#1436#0" expanded="true" />
@@ -75,127 +74,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AmbientLight.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Elements/AmbientLight.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageWriter.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Renderer/ImageWriter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="90" lean-forward="false" selection-start-line="24" selection-start-column="90" selection-end-line="24" selection-end-column="90" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1230#1231#0" expanded="true" />
-                <element signature="e#1264#1265#0" expanded="true" />
-                <element signature="e#1314#1315#0" expanded="true" />
-                <element signature="e#1359#1360#0" expanded="true" />
-                <element signature="e#1411#1412#0" expanded="true" />
-                <element signature="e#1458#1459#0" expanded="true" />
-                <element signature="e#1488#1489#0" expanded="true" />
-                <element signature="e#1523#1524#0" expanded="true" />
-                <element signature="e#1549#1550#0" expanded="true" />
-                <element signature="e#1575#1576#0" expanded="true" />
-                <element signature="e#1601#1602#0" expanded="true" />
-                <element signature="e#1627#1628#0" expanded="true" />
-                <element signature="e#1661#1662#0" expanded="true" />
-                <element signature="e#1691#1692#0" expanded="true" />
-                <element signature="e#1725#1726#0" expanded="true" />
-                <element signature="e#1755#1756#0" expanded="true" />
-                <element signature="e#2507#2508#0" expanded="true" />
-                <element signature="e#2568#2569#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Render.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Renderer/Render.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="28" column="86" lean-forward="true" selection-start-line="28" selection-start-column="86" selection-end-line="28" selection-end-column="86" />
+            <state relative-caret-position="269">
+              <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#835#836#0" expanded="true" />
-                <element signature="e#863#864#0" expanded="true" />
-                <element signature="e#904#905#0" expanded="true" />
-                <element signature="e#949#950#0" expanded="true" />
-                <element signature="e#992#993#0" expanded="true" />
-                <element signature="e#1026#1027#0" expanded="true" />
-                <element signature="e#1085#1086#0" expanded="true" />
-                <element signature="e#1148#1149#0" expanded="true" />
-                <element signature="e#2393#2394#0" expanded="true" />
-                <element signature="e#2455#2456#0" expanded="true" />
-                <element signature="e#3067#3076#0" expanded="true" />
+                <element signature="e#874#875#0" expanded="true" />
+                <element signature="e#915#916#0" expanded="true" />
+                <element signature="e#965#966#0" expanded="true" />
+                <element signature="e#1008#1009#0" expanded="true" />
+                <element signature="e#1064#1065#0" expanded="true" />
+                <element signature="e#1123#1124#0" expanded="true" />
+                <element signature="e#1186#1187#0" expanded="true" />
+                <element signature="e#2126#2127#0" expanded="true" />
+                <element signature="e#2168#2169#0" expanded="true" />
+                <element signature="e#2211#2212#0" expanded="true" />
+                <element signature="e#2273#2274#0" expanded="true" />
+                <element signature="e#2885#2894#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Geometry.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Geometries/Geometry.java">
+      <file leaf-file-name="RenderTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Unitest/RenderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            <state relative-caret-position="-16">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#565#566#0" expanded="true" />
-                <element signature="e#598#599#0" expanded="true" />
-                <element signature="e#649#650#0" expanded="true" />
-                <element signature="e#693#694#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Render.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_project source.zip/project source/src/renderer/Render.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="54" column="17" lean-forward="false" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Point3D.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Primitives/Point3D.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="renderer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Renderer/renderer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Light.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Elements/Light.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding>
-                <element signature="e#211#212#0" expanded="true" />
-                <element signature="e#240#241#0" expanded="true" />
-                <element signature="e#273#274#0" expanded="true" />
-                <element signature="e#303#304#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -207,8 +117,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -261,12 +171,13 @@
         <option value="$PROJECT_DIR$/src/Unitest/PlaneTest.java" />
         <option value="$PROJECT_DIR$/src/scene/Scene.java" />
         <option value="$PROJECT_DIR$/src/Renderer/ImageWriterTest.java" />
-        <option value="$PROJECT_DIR$/src/Unitest/ImageWriterTest.java" />
         <option value="$PROJECT_DIR$/src/Renderer/renderer.java" />
         <option value="$USER_HOME$/AppData/Local/Temp/Temp1_project source.zip/project source/src/renderer/Render.java" />
-        <option value="$PROJECT_DIR$/src/Renderer/Render.java" />
         <option value="$PROJECT_DIR$/src/Geometries/Geometry.java" />
         <option value="$PROJECT_DIR$/src/Renderer/ImageWriter.java" />
+        <option value="$PROJECT_DIR$/src/Unitest/ImageWriterTest.java" />
+        <option value="$PROJECT_DIR$/src/Unitest/RenderTest.java" />
+        <option value="$PROJECT_DIR$/src/Renderer/Render.java" />
       </list>
     </option>
   </component>
@@ -277,12 +188,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="59" />
-    <option name="width" value="1346" />
-    <option name="height" value="780" />
-  </component>
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
+    <option name="width" value="720" />
+    <option name="height" value="860" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -299,10 +206,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -325,36 +231,13 @@
               <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="myProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Geometries" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Primitives" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Renderer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scene" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Unitest" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -378,14 +261,14 @@
       <recent name="Primitives" />
       <recent name="" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="Geometries" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\owner\IdeaProjects\myProject\src\Geometries" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\owner\IdeaProjects\myProject\src\Geometries" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Geometries" />
     </key>
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
@@ -402,15 +285,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/misc.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Elements/Camera.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Geometries/Triangle.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Primitives/Ray.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Primitives/Vector.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Unitest/PlaneTest.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Unitest/SphereTest.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Unitest/TriangleTest.java</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -418,11 +292,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Renderer/ImageWriter.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Renderer/renderer.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Unitest/ImageWriterTest.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/scene/Scene.java</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -509,6 +378,748 @@
         <option name="myCanBeAbsent" value="false" />
         <option name="myId" value="SWITCHED" />
       </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/misc.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Elements/Camera.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Geometries/Triangle.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Primitives/Ray.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Primitives/Vector.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Unitest/PlaneTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Unitest/SphereTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Unitest/TriangleTest.java</PATH>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Renderer/ImageWriter.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Renderer/renderer.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Unitest/ImageWriterTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/scene/Scene.java</PATH>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
     </UpdatedFiles>
   </component>
   <component name="RunDashboard">
@@ -523,7 +1134,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ImageWriterTest.writeImageTest">
+  <component name="RunManager" selected="JUnit.RenderTest.Rendering_Test">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -544,6 +1155,31 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+    </configuration>
+    <configuration name="ImageWriterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Unitest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="myProject" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Unitest" />
+      <option name="MAIN_CLASS_NAME" value="Unitest.ImageWriterTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration name="ImageWriterTest.writeImageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -570,7 +1206,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="PlaneTest.findIntersectionsPlane" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RenderTest.Rendering_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="Unitest.*" />
@@ -581,34 +1217,9 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="Unitest" />
-      <option name="MAIN_CLASS_NAME" value="Unitest.PlaneTest" />
-      <option name="METHOD_NAME" value="findIntersectionsPlane" />
+      <option name="MAIN_CLASS_NAME" value="Unitest.RenderTest" />
+      <option name="METHOD_NAME" value="Rendering_Test" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="SphereTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Unitest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="myProject" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Unitest" />
-      <option name="MAIN_CLASS_NAME" value="Unitest.SphereTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -731,19 +1342,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.SphereTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.SphereTest.findIntersectionsSphere" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PlaneTest.findIntersectionsPlane" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TriangleTest.findIntersectionsTriangle" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ImageWriterTest.writeImageTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.SphereTest.findIntersectionsSphere" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TriangleTest.findIntersectionsTriangle" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ImageWriterTest.writeImageTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ImageWriterTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.RenderTest.Rendering_Test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ImageWriterTest.writeImageTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.SphereTest.findIntersectionsSphere" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TriangleTest.findIntersectionsTriangle" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.PlaneTest.findIntersectionsPlane" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.SphereTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.RenderTest.Rendering_Test" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ImageWriterTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ImageWriterTest.writeImageTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.SphereTest.findIntersectionsSphere" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TriangleTest.findIntersectionsTriangle" />
       </list>
     </recent_temporary>
   </component>
@@ -807,20 +1418,20 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ImageWriterTest_writeImageTest - 2018.05.09 at 11h 35m 42s.xml">
+    <history-entry file="ImageWriterTest - 2018.05.21 at 17h 57m 01s.xml">
+      <configuration name="ImageWriterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImageWriterTest_writeImageTest - 2018.05.21 at 17h 35m 38s.xml">
       <configuration name="ImageWriterTest.writeImageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PlaneTest_findIntersections - 2018.05.09 at 10h 26m 31s.xml">
-      <configuration name="PlaneTest.findIntersections" configurationId="JUnit" />
+    <history-entry file="RenderTest_Rendering_Test - 2018.05.21 at 18h 13m 14s.xml">
+      <configuration name="RenderTest.Rendering_Test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PlaneTest_findIntersectionsPlane - 2018.05.09 at 10h 34m 04s.xml">
-      <configuration name="PlaneTest.findIntersectionsPlane" configurationId="JUnit" />
+    <history-entry file="RenderTest_Rendering_Test - 2018.05.21 at 18h 15m 31s.xml">
+      <configuration name="RenderTest.Rendering_Test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SphereTest - 2018.05.09 at 10h 27m 53s.xml">
-      <configuration name="SphereTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SphereTest_findIntersections - 2018.05.09 at 10h 25m 08s.xml">
-      <configuration name="SphereTest.findIntersections" configurationId="JUnit" />
+    <history-entry file="RenderTest_Rendering_Test - 2018.05.21 at 18h 30m 57s.xml">
+      <configuration name="RenderTest.Rendering_Test" configurationId="JUnit" />
     </history-entry>
     <history-entry file="SphereTest_findIntersections - 2018.05.09 at 10h 25m 13s.xml">
       <configuration name="SphereTest.findIntersections" configurationId="JUnit" />
@@ -848,53 +1459,52 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.49713877" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.49713877" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3266399" sideWeight="0.47138768" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3755047" sideWeight="0.19098713" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.012859304" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267974" sideWeight="0.5621118" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3755047" sideWeight="0.8090129" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.49713877" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3755047" sideWeight="0.19098713" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37349397" sideWeight="0.8090129" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32797858" sideWeight="0.7424893" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32837838" sideWeight="0.49713877" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19288956" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39973083" sideWeight="0.47711015" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3755047" sideWeight="0.19098713" order="13" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07224607" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39864865" sideWeight="0.47711015" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3755047" sideWeight="0.19098713" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07224607" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39864865" sideWeight="0.47711015" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.49713877" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32702702" sideWeight="0.47138768" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37432432" sideWeight="0.8090129" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32837838" sideWeight="0.7424893" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37432432" sideWeight="0.8090129" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32837838" sideWeight="0.49713877" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18955651" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -978,7 +1588,7 @@
           <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="45" />
+      <option name="time" value="50" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -987,45 +1597,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/Desktop/project source/src/tests/CameraTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/Geometries/Override.java" />
-    <entry file="file://$PROJECT_DIR$/src/Geometries/RadialGeometry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/Cylinder.java" />
-    <entry file="file://$PROJECT_DIR$/src/Geometries/Cylinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="84" column="53" lean-forward="false" selection-start-line="84" selection-start-column="53" selection-end-line="84" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1031#1032#0" expanded="false" />
-            <element signature="e#1077#1078#0" expanded="false" />
-            <element signature="e#1117#1118#0" expanded="false" />
-            <element signature="e#1166#1167#0" expanded="false" />
-            <element signature="e#1217#1218#0" expanded="false" />
-            <element signature="e#1273#1274#0" expanded="false" />
-            <element signature="e#1331#1332#0" expanded="false" />
-            <element signature="e#1394#1395#0" expanded="false" />
-            <element signature="e#2997#2998#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/elements/AmbientLight.java" />
-    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/elements/Light.java" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/testng/lib/testng.jar!/org/testng/AssertJUnit.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Geometries/Plane.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1052,7 +1623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="42" column="4" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1070,7 +1640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-939">
           <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1088,9 +1657,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="61" column="5" lean-forward="false" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
-          <folding>
-            <marker date="1526304822499" expanded="true" signature="1767:1773" ph="{}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1106,31 +1673,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Unitest/TriangleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-288">
-          <caret line="25" column="71" lean-forward="false" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#506#515#0" expanded="false" />
-            <element signature="e#578#587#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/Desktop/project source/src/tests/PlaneTest.java" />
     <entry file="file://$USER_HOME$/Downloads/Desktop/project source/src/renderer/ImageWriter.java" />
-    <entry file="file://$USER_HOME$/Downloads/Desktop/project source/src/scene/Scene.java" />
     <entry file="file://$PROJECT_DIR$/src/Renderer/ImageWriterTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/Unitest/ImageWriterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Desktop/project source/src/scene/SceneBuilder.java" />
     <entry file="file://$USER_HOME$/Downloads/Desktop/project source/src/renderer/Render.java" />
     <entry file="file://$PROJECT_DIR$/src/Unitest/VectorTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1148,76 +1693,138 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/Desktop/project source/src/tests/ImageWriterTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/Elements/Light.java">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_project source.zip/project source/src/scene/Scene.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/jre/lib/rt.jar!/java/awt/image/BufferedImage.class" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/jre/lib/rt.jar!/java/awt/Color.class" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/jre/lib/rt.jar!/javax/swing/plaf/nimbus/DerivedColor.class" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/javax/swing/plaf/nimbus/DerivedColor.java" />
+    <entry file="file://$PROJECT_DIR$/src/Primitives/Point3D.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_project source.zip/project source/src/scene/Scene.java">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_project source.zip/project source/src/geometries/Geometry.java" />
+    <entry file="file://$PROJECT_DIR$/src/Elements/Camera.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-680">
+        <state relative-caret-position="340">
+          <caret line="84" column="51" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_project source.zip/project source/src/renderer/Render.java" />
+    <entry file="file://$PROJECT_DIR$/src/Elements/AmbientLight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Desktop/project source/src/tests/ImageWriterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myProject.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-511">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/jre/lib/rt.jar!/java/awt/image/BufferedImage.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1105">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/jre/lib/rt.jar!/java/awt/Color.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="70" column="47" lean-forward="false" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/jre/lib/rt.jar!/javax/swing/plaf/nimbus/DerivedColor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="28" column="19" lean-forward="false" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-          <folding>
-            <marker date="1519656850472" expanded="false" signature="3:117" ph="/.../" />
-            <marker date="1519656850472" expanded="true" signature="484:507" ph="{}" />
-            <marker date="1519656850472" expanded="true" signature="562:585" ph="{}" />
-            <marker date="1519656850472" expanded="true" signature="619:642" ph="{}" />
-            <marker date="1519656850472" expanded="true" signature="683:706" ph="{}" />
-            <marker date="1519656850472" expanded="true" signature="747:770" ph="{}" />
-            <marker date="1519656850472" expanded="true" signature="804:827" ph="{}" />
-            <marker date="1519656850472" expanded="true" signature="861:884" ph="{}" />
-            <marker date="1519656850472" expanded="true" signature="910:933" ph="{}" />
-            <marker date="1519656850472" expanded="true" signature="981:1004" ph="{}" />
-            <marker date="1519656850472" expanded="true" signature="1032:1055" ph="{}" />
-            <marker date="1519656850472" expanded="true" signature="1090:1113" ph="{}" />
-            <marker date="1519656850472" expanded="true" signature="1144:1167" ph="{}" />
-            <marker date="1519656850472" expanded="true" signature="1208:1231" ph="{}" />
-            <marker date="1519656850472" expanded="true" signature="1345:1581" ph="{...}" />
-            <marker date="1519656850472" expanded="true" signature="1422:1445" ph="{}" />
-            <marker date="1519656850472" expanded="true" signature="1497:1520" ph="{}" />
-            <marker date="1519656850472" expanded="true" signature="1552:1575" ph="{}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/javax/swing/plaf/nimbus/DerivedColor.java">
+    <entry file="file://$PROJECT_DIR$/out/production/myProject/Unitest/ImageWriterTest.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#701#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Elements/Light.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Image writer test.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Unitest/ImageWriterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Unitest/TriangleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_Of_Imege_Writer.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Desktop/project source/src/scene/SceneBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1263">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Desktop/project source/src/scene/Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-810">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Renderer/ImageWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-907">
+          <caret line="24" column="90" lean-forward="false" selection-start-line="24" selection-start-column="90" selection-end-line="24" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+            <element signature="e#1264#1265#0" expanded="true" />
+            <element signature="e#1314#1315#0" expanded="true" />
+            <element signature="e#1359#1360#0" expanded="true" />
+            <element signature="e#1411#1412#0" expanded="true" />
+            <element signature="e#1458#1459#0" expanded="true" />
+            <element signature="e#1488#1489#0" expanded="true" />
+            <element signature="e#1523#1524#0" expanded="true" />
+            <element signature="e#1549#1550#0" expanded="true" />
+            <element signature="e#1575#1576#0" expanded="true" />
+            <element signature="e#1601#1602#0" expanded="true" />
+            <element signature="e#1627#1628#0" expanded="true" />
+            <element signature="e#1661#1662#0" expanded="true" />
+            <element signature="e#1691#1692#0" expanded="true" />
+            <element signature="e#1725#1726#0" expanded="true" />
+            <element signature="e#1755#1756#0" expanded="true" />
+            <element signature="e#2507#2508#0" expanded="true" />
+            <element signature="e#2568#2569#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1229,48 +1836,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Primitives/Point3D.java">
+    <entry file="file://$USER_HOME$/Downloads/Desktop/project source/src/tests/RenderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="49" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_project source.zip/project source/src/geometries/Geometry.java">
+    <entry file="file://$PROJECT_DIR$/src/Geometries/Geometry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="4" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="129">
+          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Desktop/project source/src/geometries/Geometry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elements/Camera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="84" column="51" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3852#3853#0" expanded="true" />
-            <element signature="e#3945#3946#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_project source.zip/project source/src/renderer/Render.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="54" column="17" lean-forward="false" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scene/Scene.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-544">
-          <caret line="44" column="39" lean-forward="true" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
+        <state relative-caret-position="-926">
+          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1435#1436#0" expanded="true" />
@@ -1305,75 +1904,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elements/AmbientLight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Renderer/Render.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="28" column="86" lean-forward="true" selection-start-line="28" selection-start-column="86" selection-end-line="28" selection-end-column="86" />
+        <state relative-caret-position="269">
+          <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-            <element signature="e#904#905#0" expanded="true" />
-            <element signature="e#949#950#0" expanded="true" />
-            <element signature="e#992#993#0" expanded="true" />
-            <element signature="e#1026#1027#0" expanded="true" />
-            <element signature="e#1085#1086#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2455#2456#0" expanded="true" />
-            <element signature="e#3067#3076#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#915#916#0" expanded="true" />
+            <element signature="e#965#966#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1064#1065#0" expanded="true" />
+            <element signature="e#1123#1124#0" expanded="true" />
+            <element signature="e#1186#1187#0" expanded="true" />
+            <element signature="e#2126#2127#0" expanded="true" />
+            <element signature="e#2168#2169#0" expanded="true" />
+            <element signature="e#2211#2212#0" expanded="true" />
+            <element signature="e#2273#2274#0" expanded="true" />
+            <element signature="e#2885#2894#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Geometries/Geometry.java">
+    <entry file="file://$PROJECT_DIR$/src/Unitest/RenderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        <state relative-caret-position="-16">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#598#599#0" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Renderer/ImageWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="90" lean-forward="false" selection-start-line="24" selection-start-column="90" selection-end-line="24" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1230#1231#0" expanded="true" />
-            <element signature="e#1264#1265#0" expanded="true" />
-            <element signature="e#1314#1315#0" expanded="true" />
-            <element signature="e#1359#1360#0" expanded="true" />
-            <element signature="e#1411#1412#0" expanded="true" />
-            <element signature="e#1458#1459#0" expanded="true" />
-            <element signature="e#1488#1489#0" expanded="true" />
-            <element signature="e#1523#1524#0" expanded="true" />
-            <element signature="e#1549#1550#0" expanded="true" />
-            <element signature="e#1575#1576#0" expanded="true" />
-            <element signature="e#1601#1602#0" expanded="true" />
-            <element signature="e#1627#1628#0" expanded="true" />
-            <element signature="e#1661#1662#0" expanded="true" />
-            <element signature="e#1691#1692#0" expanded="true" />
-            <element signature="e#1725#1726#0" expanded="true" />
-            <element signature="e#1755#1756#0" expanded="true" />
-            <element signature="e#2507#2508#0" expanded="true" />
-            <element signature="e#2568#2569#0" expanded="true" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/Render test.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
