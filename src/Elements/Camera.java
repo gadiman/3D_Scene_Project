@@ -34,7 +34,7 @@ public class Camera {
         Vup = new Vector(vUp);
         Vto = new Vector(vTo);
         Vright = Vup.crossProduct(Vto);
-        Vup = Vto.crossProduct(Vright);//////?????????????????
+        Vup = Vto.crossProduct(Vright);
 
         try {
             Vup.normalize();

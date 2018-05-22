@@ -7,7 +7,7 @@ public class Vector implements Comparable<Vector> {
 
     //*************************************constructors******************************************//
     public Vector(Point3D head) {
-        this._head = head;
+        this._head =new Point3D(head);
     }
 
     ///default constructor
@@ -17,7 +17,7 @@ public class Vector implements Comparable<Vector> {
 
     ///copy constructor
     public Vector(Vector vector) {
-        this._head = new Point3D(vector.getHead());
+        this._head = vector.getHead();
     }
 
     public Vector(Point3D p1, Point3D p2){
@@ -86,7 +86,7 @@ public class Vector implements Comparable<Vector> {
         double XV = v.getHead().getX().getCoordinate();
         double YV = v.getHead().getY().getCoordinate();
         double ZV = v.getHead().getZ().getCoordinate();
-        return new Vector(new Point3D((Y * ZV) - (YV * Z), -((X * ZV) - (Z * XV)), (X * YV) - (XV * Y)));
+        return new Vector((Y * ZV) - (YV * Z), -((X * ZV) - (Z * XV)), (X * YV) - (XV * Y));
     }
 
     public double length() {

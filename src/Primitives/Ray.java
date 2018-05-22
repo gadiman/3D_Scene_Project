@@ -18,15 +18,15 @@ public class Ray {
     }
 
     ///default constructor
-    public Ray() {
-        _POO = new Point3D(new Coordinate(0), new Coordinate(0), new Coordinate(0));
-        _direction=new Vector(new Point3D(new Coordinate(0), new Coordinate(0), new Coordinate(0)));
+    public Ray(){
+        this._POO = new Point3D();
+        this._direction = new Vector(_direction);
     }
 
     ///copy constructor
     public Ray(Ray ray){
-        _POO=new Point3D(ray._POO);
-        _direction=new Vector(ray._direction);
+        _POO=ray.getPoint3D();
+        _direction=ray.getVector();
     }
 
 //***************************************getters and setters***********************************//

@@ -11,14 +11,14 @@ import scene.Scene;
 class RenderTest {
 
     @Test
-    public void Rendering_Test(){
+   public void Rendering_Test(){
 
         Scene scene = new Scene();
 
         scene.addGeometry(new Sphere(50, new Point3D(0.0, 0.0, -50)));
 
         Triangle triangle = new Triangle(new Point3D( 100, 0, -49),
-                new Point3D(  0, 100, -49),
+               new Point3D(  0, 100, -49),
                 new Point3D( 100, 100, -49));
 
         Triangle triangle2 = new Triangle(new Point3D( 100, 0, -49),

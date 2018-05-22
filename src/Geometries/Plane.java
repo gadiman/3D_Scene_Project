@@ -22,12 +22,17 @@ public class Plane extends Geometry implements Comparable<Plane> {
     public Plane(Point3D point, Vector normal) {
         this.point = new Point3D(point);
         this.normal = new Vector(normal);
+        try {
+            normal.normalize();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     //copy constructor
     public Plane(Plane plane) {
         point = plane.getPoint();
-        normal = plane.getNormal();
+        normal = plane.getNormal(null);
     }
 
     //***************************getters and setters***********************************//

@@ -6,7 +6,7 @@ public class Point3D extends Point2D implements Comparable<Point2D> {
     //***********************************constructors********************************//
     public Point3D(Coordinate x, Coordinate y, Coordinate z) {
         super(x, y);
-        this._z = z;
+        this._z = new Coordinate(z);
     }
 
     public Point3D(double x, double y, double z) {
@@ -16,14 +16,13 @@ public class Point3D extends Point2D implements Comparable<Point2D> {
 
     ///default constructor
     public Point3D() {
-        super(new Coordinate(0), new Coordinate(0));
-        _z = new Coordinate(0);
+        _z=new Coordinate();
     }
 
     ///copy constructor
-    public Point3D(Point3D point3d) {
-        super(new Coordinate(point3d.getX()), new Coordinate(point3d.getY()));
-        this._z = new Coordinate(point3d.getZ());
+    public Point3D(Point3D point3D) {
+        super(point3D._x, point3D._y);
+        _z = point3D.getZ();
     }
 
     //*******************************getters and setters****************************//

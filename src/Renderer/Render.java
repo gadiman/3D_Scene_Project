@@ -21,10 +21,6 @@ public class Render {
         imageWriter = new ImageWriter(image);
     }
 
-    public Render(Render _render) {
-        scene = new Scene(_render.scene);
-        imageWriter = new ImageWriter(_render.imageWriter);
-    }
 
     //*******************************getters and setters****************************//
 
@@ -37,7 +33,7 @@ public class Render {
     }
 
     public ImageWriter getImageWriter() {
-        return new ImageWriter(this.imageWriter);
+        return this.imageWriter;
     }
 
     public void setImageWriter(ImageWriter imageWriter) {

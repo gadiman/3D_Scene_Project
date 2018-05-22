@@ -98,4 +98,5 @@ public class Sphere extends RadialGeometry implements Comparable<Sphere>{
 
         return intersectionPoints;
     }
+
 }
