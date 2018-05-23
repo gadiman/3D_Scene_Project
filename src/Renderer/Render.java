@@ -18,7 +18,7 @@ public class Render {
     //****************************constructors****************************************//
     public Render(ImageWriter image, Scene _scene) {
         scene = new Scene(_scene);
-        imageWriter = image;
+        imageWriter =new ImageWriter(image);
     }
 
 
@@ -33,7 +33,7 @@ public class Render {
     }
 
     public ImageWriter getImageWriter() {
-        return this.imageWriter;
+        return new ImageWriter(this.imageWriter);
     }
 
     public void setImageWriter(ImageWriter imageWriter) {

@@ -25,7 +25,7 @@ public class Scene {
             BackgroundColor = new Color(0, 0, 0);
             _ambientLight = new AmbientLight();
             set_camera(new Camera());
-            ScreenDistance = 100;
+            ScreenDistance = 50;
             SceneName=" scene";
     }
 

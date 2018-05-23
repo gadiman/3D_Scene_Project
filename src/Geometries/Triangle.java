@@ -76,7 +76,7 @@ public class Triangle extends Geometry implements Comparable<Triangle> {
     public Vector getNormal(Point3D P) {
         Vector FirstVec = new Vector(_p1, _p2);
         Vector SecondVec = new Vector(_p1, _p3);
-        Vector NormalVec = FirstVec.crossProduct(SecondVec);
+        Vector NormalVec = new Vector(FirstVec.crossProduct(SecondVec));
 
         try {
             NormalVec.normalize();

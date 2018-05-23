@@ -15,7 +15,7 @@ public class Camera {
     // default constructor
     public Camera() {
 
-        _center = new Point3D(0, 0, 10);
+        _center = new Point3D(0, 0, 0);
         Vup = new Vector(new Point3D(1.0, 0.0, 0.0));
         Vto = new Vector(new Point3D(0.0, 0.0, -1.0));
         Vright = Vup.crossProduct(Vto);

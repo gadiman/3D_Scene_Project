@@ -15,27 +15,28 @@ class RenderTest {
 
         Scene scene = new Scene();
 
-        scene.addGeometry(new Sphere(60, new Point3D(0.0, 0.0, -50)));
+        scene.addGeometry(new Sphere(50, new Point3D(0.0, 0.0, -50)));
 
-        Triangle triangle = new Triangle(new Point3D( 100, 0, -49),
-               new Point3D(  0, 100, -49),
-                new Point3D( 100, 100, -49));
+       Triangle triangle = new Triangle(new Point3D( 100, 0, -51),
+               new Point3D(  0, 100, -51),
+                new Point3D( 100, 100, -51));
 
-        Triangle triangle2 = new Triangle(new Point3D( 100, 0, -49),
-                new Point3D(  0, -100, -49),
-                new Point3D( 100,-100, -49));
-        Triangle triangle3 = new Triangle(new Point3D(-100, 0, -49),
-                new Point3D(  0, 100, -49),
-                new Point3D(-100, 100, -49));
+        Triangle triangle2 = new Triangle(new Point3D( 100, 0, -51),
+                new Point3D(  0, -100, -51),
+                new Point3D( 100,-100, -51));
+        Triangle triangle3 = new Triangle(new Point3D(-100, 0, -51),
+                new Point3D(  0, 100, -51),
+                new Point3D(-100, 100, -51));
 
-        Triangle triangle4 = new Triangle(new Point3D(-100, 0, -49),
-                new Point3D(  0,  -100, -49),
-                new Point3D(-100, -100, -49));
+        Triangle triangle4 = new Triangle(new Point3D(-100, 0, -51),
+                new Point3D(  0,  -100, -51),
+                new Point3D(-100, -100, -51));
 
         scene.addGeometry(triangle);
         scene.addGeometry(triangle2);
         scene.addGeometry(triangle3);
         scene.addGeometry(triangle4);
+
 
         ImageWriter imageWriter = new ImageWriter("Render test", 500, 500, 500, 500);
 
