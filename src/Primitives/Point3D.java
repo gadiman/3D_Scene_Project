@@ -21,7 +21,7 @@ public class Point3D extends Point2D implements Comparable<Point2D> {
 
     ///copy constructor
     public Point3D(Point3D point3D) {
-        super(point3D._x, point3D._y);
+        super(point3D.getX(), point3D.getY());
         _z = point3D.getZ();
     }
 

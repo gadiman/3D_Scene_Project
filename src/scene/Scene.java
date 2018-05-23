@@ -32,7 +32,7 @@ public class Scene {
     public Scene (Scene scene){
         BackgroundColor= scene.getBackgroundColor();
         _ambientLight = scene.get_ambientLight();
-        Geometreis = scene.Geometreis;
+        Geometreis = scene.getGeometreis();
         _camera = scene.get_camera();
         ScreenDistance = scene.ScreenDistance;
     }

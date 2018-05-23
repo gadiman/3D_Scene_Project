@@ -3,7 +3,7 @@ package Elements;
 import java.awt.Color;
 
 public class AmbientLight extends Light {
-    private final double Ka = 0.1;
+    private final double Ka = 1.0;
 
     //****************************constructors****************************************//
     public AmbientLight() {

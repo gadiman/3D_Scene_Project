@@ -15,7 +15,7 @@ class ImageWriterTest {
                 for (int j = 0; j < imageWriter.getWidth(); j++){
 
                     if (i % 50 == 0 || j % 50 == 0)
-                        imageWriter.writePixel(j, i, 255, 255, 255);
+                        imageWriter.writePixel(j, i, 127, 127, 127);
 
                 }
             }

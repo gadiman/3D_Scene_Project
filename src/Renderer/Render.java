@@ -18,7 +18,7 @@ public class Render {
     //****************************constructors****************************************//
     public Render(ImageWriter image, Scene _scene) {
         scene = new Scene(_scene);
-        imageWriter = new ImageWriter(image);
+        imageWriter = image;
     }
 
 
@@ -49,6 +49,16 @@ public class Render {
 
                 Ray ray = this.scene.get_camera().constructRayThroughPixel(this.imageWriter.getNx(), this.imageWriter.getNy(), j, i,
                         scene.getScreenDistance(), this.imageWriter.getWidth(), this.imageWriter.getHeight());
+                List<Point3D>IntersectionPoints=getSenceRayIntersections(ray);
+                if (IntersectionPoints.isEmpty())
+                {
+                 this.imageWriter.writePixel(j,i,this.scene.getBackgroundColor());
+                }
+                else
+                {
+                    Point3D ClosestPoint = getClosedPoint(IntersectionPoints);
+                    this.imageWriter.writePixel(j,i,calcColor(ClosestPoint));
+                }
 
             }
         }
