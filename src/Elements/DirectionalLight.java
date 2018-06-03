@@ -5,7 +5,7 @@ import Primitives.Vector;
 
 import java.awt.*;
 
-public class DirectionalLight extends Light {
+public class DirectionalLight extends Light implements LightSource {
     Vector direction;
 
     //****************************constructors****************************************//
@@ -37,6 +37,10 @@ public class DirectionalLight extends Light {
     @Override
     public Color getIntensity(Point3D p) {
         return super.getIntensity(p);
+    }
+
+    public Vector getL(Point3D point) {
+        return getDirection();
     }
 
 }

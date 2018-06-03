@@ -30,4 +30,5 @@ public class SpotLight extends PointLight {
         return new Color((int) (pointColor.getRed() * dotprodact), (int) (pointColor.getGreen() * dotprodact),
                 (int) (pointColor.getBlue() * dotprodact));
     }
+
 }

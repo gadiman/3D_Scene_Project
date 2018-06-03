@@ -7,7 +7,7 @@ import Primitives.Ray;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Triangle extends Geometry implements Comparable<Triangle> {
+public class Triangle extends Geometry implements Comparable<Triangle>, FlatGeometry {
     private Point3D _p1;
     private Point3D _p2;
     private Point3D _p3;

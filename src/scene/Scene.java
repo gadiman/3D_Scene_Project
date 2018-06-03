@@ -2,12 +2,14 @@ package scene;
 
 import Elements.AmbientLight;
 import Elements.Camera;
+import Elements.LightSource;
 import Geometries.Geometry;
 
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
 
 public class Scene {
 
@@ -17,7 +19,7 @@ public class Scene {
     private Camera _camera;
     private double ScreenDistance;
     private AmbientLight _ambientLight;
-
+    private List<LightSource> _lights = new ArrayList<LightSource>();
 
     //**********************constructors***********************************//
 
@@ -35,6 +37,7 @@ public class Scene {
         Geometreis = scene.getGeometreis();
         _camera = scene.get_camera();
         ScreenDistance = scene.ScreenDistance;
+        _lights=scene._lights;
     }
 
     public Scene(AmbientLight aLight, Color background,
@@ -100,6 +103,14 @@ public class Scene {
         Geometreis.add(geometry);
     }
     public Iterator<Geometry> getGeometriesIterator(){
+
         return Geometreis.iterator();
+    }
+    public Iterator<LightSource> getLightsIterator(){
+        return _lights.iterator();
+    }
+
+    public void addLight(LightSource light){
+        _lights.add(light);
     }
 }

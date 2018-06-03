@@ -7,7 +7,7 @@ import Primitives.Vector;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Plane extends Geometry implements Comparable<Plane> {
+public class Plane extends Geometry implements Comparable<Plane> ,FlatGeometry{
 
     protected Point3D point;
     protected Vector normal;

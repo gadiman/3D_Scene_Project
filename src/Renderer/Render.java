@@ -1,9 +1,13 @@
 package Renderer;
 
+import Elements.LightSource;
+import Geometries.FlatGeometry;
 import Geometries.Geometry;
 import Primitives.Point3D;
 import Primitives.Ray;
+import Primitives.Vector;
 import scene.Scene;
+
 import java.awt.*;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -83,24 +87,51 @@ public class Render {
     }
 
 
-        private Color calcColor(Geometry geometry, Point3D point) {
+    private Color calcColor(Geometry geometry, Point3D point) {
         Color ambientLight = scene.get_ambientLight().getIntensity(point);
         Color emissionLight = geometry.get_emmission();
-        return new Color(ambientLight.getRed() + emissionLight.getRed(), ambientLight.getGreen() + emissionLight.getGreen(),
-                ambientLight.getBlue() + emissionLight.getBlue());
+        Color _color = addColors(ambientLight, emissionLight);
+        Iterator<LightSource> lights = scene.getLightsIterator();
+
+        Color lightReflected = new Color(0, 0, 0);
+
+        while (lights.hasNext()) {
+
+            LightSource light = lights.next();
+
+            if (!occluded(light, point, geometry)) {
+
+                Color lightIntensity = light.getIntensity(point);
+
+
+               /* Color lightDiffuse = calcDiffusiveComp(geometry.getMaterial().getKd(),
+                        geometry.getNormal(point),
+                        light.getL(point),
+                        lightIntensity);
+
+
+                Color lightSpecular = calcSpecularComp(geometry.getMaterial().getKs(),
+                        new Vector(point, scene.get_camera().get_center()),
+                        geometry.getNormal(point),
+                        light.getL(point),
+                        geometry.getMaterial().getNshaininess(), lightIntensity);
+
+                lightReflected = addColors(lightDiffuse, lightSpecular);*/
+            }
+        }
+
+        Color I0 = addColors(_color, lightReflected);
+
+        return I0;
     }
 
     private Entry<Geometry, Point3D> findClosesntIntersection(Ray ray) {
-
         Map<Geometry, List<Point3D>> intersectionPoints = getSenceRayIntersections(ray);
-
         if (intersectionPoints.size() == 0)
             return null;
-
         Map<Geometry, Point3D> closestPoint = getClosedPoint(intersectionPoints);
         Entry<Geometry, Point3D> entry = closestPoint.entrySet().iterator().next();
         return entry;
-
     }
 
     private Map<Geometry, Point3D> getClosedPoint(Map<Geometry, List<Point3D>> listOfPoints) {
@@ -123,11 +154,12 @@ public class Render {
     private Map<Geometry, List<Point3D>> getSenceRayIntersections(Ray _ray) {
         Iterator<Geometry> it = scene.getGeometriesIterator();
         Map<Geometry, List<Point3D>> pointWithRay = new HashMap<Geometry, List<Point3D>>();
-        Geometry temp = null;
+        //Geometry temp = null;
         while (it.hasNext()) {
-            temp = it.next();
+            Geometry temp = it.next();
             List<Point3D> giometryIntersectionPoint = temp.FindIntersections(_ray);
-            pointWithRay.put(temp, giometryIntersectionPoint);
+            if (!giometryIntersectionPoint.isEmpty())
+                pointWithRay.put(temp, giometryIntersectionPoint);
         }
         return pointWithRay;
     }
@@ -143,5 +175,31 @@ public class Render {
         return _color;
     }
 
+    private boolean occluded(LightSource light, Point3D point, Geometry geometry) {
+
+        Vector lightDirection = light.getL(point);
+        lightDirection.multInScalar(-1.0);
+        lightDirection.normalize();
+
+        Point3D geometryPoint = new Point3D(point);
+        Vector epsVector = new Vector(geometry.getNormal(point));
+        epsVector.multInScalar(2.0);
+        geometryPoint.addVectorToPoint(epsVector);
+
+        Ray lightRay = new Ray(geometryPoint, lightDirection);
+        Map<Geometry, List<Point3D>> intersectionPoints = getSenceRayIntersections(lightRay);
+
+        // Flat geometry cannot self intersect
+        if (geometry instanceof FlatGeometry) {
+            intersectionPoints.remove(geometry);
+        }
+
+        for (Entry<Geometry, List<Point3D>> entry : intersectionPoints.entrySet())
+            if (entry.getKey().getMaterial().getKt() == 0)
+                return true;
+
+        return false;
+
+    }
 
 }

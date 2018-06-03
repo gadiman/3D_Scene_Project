@@ -4,17 +4,19 @@ import Primitives.Material;
 import Primitives.Point3D;
 import Primitives.Ray;
 import Primitives.Vector;
+
 import java.awt.*;
 import java.util.List;
 
 public abstract class Geometry {
 
     private Color _emmission = new Color(0, 0, 0);
-    private Material material;
+    private Material material = new Material();
 
     //***********************************constructors********************************//
     ///default constructor
     public Geometry() {
+
     }
 
     //copy constructor
@@ -24,7 +26,7 @@ public abstract class Geometry {
     //***************************Getters and Setters*********************************//
 
     public Material getMaterial() {
-        return material;
+        return this.material;
     }
 
     public void setMaterial(Material material) {
@@ -41,6 +43,7 @@ public abstract class Geometry {
 
     //********************************functions**************************************//
     public abstract Vector getNormal(Point3D p);
-    public abstract List<Point3D> FindIntersections (Ray ray);
+
+    public abstract List<Point3D> FindIntersections(Ray ray);
 
 }
