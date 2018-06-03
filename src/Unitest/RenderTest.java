@@ -24,6 +24,7 @@ class RenderTest {
         Triangle triangle2 = new Triangle(new Point3D( 100, 0, -51),
                 new Point3D(  0, -100, -51),
                 new Point3D( 100,-100, -51));
+
         Triangle triangle3 = new Triangle(new Point3D(-100, 0, -51),
                 new Point3D(  0, 100, -51),
                 new Point3D(-100, 100, -51));

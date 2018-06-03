@@ -4,7 +4,6 @@ import Geometries.Geometry;
 import Primitives.Point3D;
 import Primitives.Ray;
 import scene.Scene;
-
 import java.awt.*;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -18,11 +17,11 @@ public class Render {
     private final int RECURSION_LEVEL = 3;
 
     //****************************constructors****************************************//
+
     public Render(ImageWriter image, Scene _scene) {
         scene = new Scene(_scene);
         imageWriter = new ImageWriter(image);
     }
-
 
     //*******************************getters and setters****************************//
 
@@ -84,7 +83,7 @@ public class Render {
     }
 
 
-    private Color calcColor(Geometry geometry, Point3D point) {
+        private Color calcColor(Geometry geometry, Point3D point) {
         Color ambientLight = scene.get_ambientLight().getIntensity(point);
         Color emissionLight = geometry.get_emmission();
         return new Color(ambientLight.getRed() + emissionLight.getRed(), ambientLight.getGreen() + emissionLight.getGreen(),
