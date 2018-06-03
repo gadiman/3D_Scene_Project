@@ -16,7 +16,7 @@ public class Point3D extends Point2D implements Comparable<Point2D> {
 
     ///default constructor
     public Point3D() {
-        _z=new Coordinate();
+        _z = new Coordinate();
     }
 
     ///copy constructor
@@ -37,10 +37,10 @@ public class Point3D extends Point2D implements Comparable<Point2D> {
     //********************************functions**************************************//
 
     public int compareTo(Point3D P3d) {
-        if (((Point2D)this).compareTo((Point2D)P3d) == 0)
+        if (((Point2D) this).compareTo((Point2D) P3d) == 0)
             if (this._z.compareTo(P3d._z) == 0)
-                    return 0;
-            return 1;
+                return 0;
+        return 1;
     }
 
     @Override

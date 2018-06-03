@@ -109,13 +109,10 @@ public class Triangle extends Geometry implements Comparable<Triangle> {
         Double Side2=Chacking_Side(P_P0,ray,P0,this._p2,this._p3);
         // Checking 1/3 triangular side
         Double Side3=Chacking_Side(P_P0,ray,P0,this._p3,this._p1);
-
-
         if (((Side1 > 0) && (Side2 > 0) && (Side3 > 0)) ||
                 ((Side1 < 0) && (Side2 < 0) && (Side3 < 0))){
             intersectionPoints.add(intersectionPlane);
         }
-
         return intersectionPoints;
     }
 

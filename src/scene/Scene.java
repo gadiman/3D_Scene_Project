@@ -39,7 +39,6 @@ public class Scene {
 
     public Scene(AmbientLight aLight, Color background,
                  Camera camera, double screenDistance){
-
         BackgroundColor = background;
         _ambientLight = new AmbientLight(aLight);
         set_camera(new Camera(camera));

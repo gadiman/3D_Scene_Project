@@ -32,6 +32,7 @@ class RenderTest {
                 new Point3D(  0,  -100, -51),
                 new Point3D(-100, -100, -51));
 
+
         scene.addGeometry(triangle);
         scene.addGeometry(triangle2);
         scene.addGeometry(triangle3);

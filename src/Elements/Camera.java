@@ -96,7 +96,6 @@ public class Camera {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         // returning the constructed ray
         return new Ray(P, ray);
     }

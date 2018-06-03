@@ -1,13 +1,11 @@
 package Primitives;
 
-import java.lang.Exception;
-
 public class Vector implements Comparable<Vector> {
     private Point3D _head;
 
     //*************************************constructors******************************************//
     public Vector(Point3D head) {
-        this._head =new Point3D(head);
+        this._head = new Point3D(head);
     }
 
     ///default constructor
@@ -20,18 +18,17 @@ public class Vector implements Comparable<Vector> {
         this._head = vector.getHead();
     }
 
-    public Vector(Point3D p1, Point3D p2){
+    public Vector(Point3D p1, Point3D p2) {
         this(p2.getX().getCoordinate() - p1.getX().getCoordinate(),
                 p2.getY().getCoordinate() - p1.getY().getCoordinate(),
                 p2.getZ().getCoordinate() - p1.getZ().getCoordinate());
     }
 
-    public Vector(double x,  double y, double z){
-        this._head =  new Point3D(new Coordinate(x),
+    public Vector(double x, double y, double z) {
+        this._head = new Point3D(new Coordinate(x),
                 new Coordinate(y),
                 new Coordinate(z));
     }
-
 
     //************************************getters and setters****************************************//
     public Point3D getHead() {
@@ -97,15 +94,15 @@ public class Vector implements Comparable<Vector> {
         return Math.sqrt(Math.pow(X, 2) + Math.pow(Y, 2) + Math.pow(Z, 2));
     }
 
-    public void normalize() throws Exception {
+    public void normalize() {
 
         double X = getHead().getX().getCoordinate();
         double Y = getHead().getY().getCoordinate();
         double Z = getHead().getZ().getCoordinate();
         double L = this.length();
         if (L == 0)
-            throw new Exception("divide by zero exception!");
-        this.setHead(new Point3D(X / L, Y / L, Z /L));
+            throw new ArithmeticException("divide by zero exception!");
+        this.setHead(new Point3D(X / L, Y / L, Z / L));
     }
 
 

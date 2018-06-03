@@ -1,5 +1,6 @@
 package Geometries;
 
+import Primitives.Material;
 import Primitives.Point3D;
 import Primitives.Ray;
 import Primitives.Vector;
@@ -9,6 +10,7 @@ import java.util.List;
 public abstract class Geometry {
 
     private Color _emmission = new Color(0, 0, 0);
+    private Material material;
 
     //***********************************constructors********************************//
     ///default constructor
@@ -17,9 +19,17 @@ public abstract class Geometry {
 
     //copy constructor
     public Geometry(Geometry geometry) {
-
     }
+
     //***************************Getters and Setters*********************************//
+
+    public Material getMaterial() {
+        return material;
+    }
+
+    public void setMaterial(Material material) {
+        this.material = material;
+    }
 
     public Color get_emmission() {
         return _emmission;
