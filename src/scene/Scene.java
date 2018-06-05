@@ -84,8 +84,8 @@ public class Scene {
         return ScreenDistance;
     }
 
-    public void setScreenDistance(double screenDistance) {
-        ScreenDistance = screenDistance;
+    public void setScreenDistance(double screenDistance_) {
+        ScreenDistance = screenDistance_;
     }
 
     public AmbientLight get_ambientLight() {

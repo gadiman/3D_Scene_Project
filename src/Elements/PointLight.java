@@ -30,7 +30,7 @@ public class PointLight extends Light implements LightSource {
     //********************************functions**************************************//
     public Color getIntensity(Point3D p3d) {
         Double distance = position.distance(p3d);
-        Double k = 1 / Kc + Kl * distance + Kq * Math.pow(distance, 2);
+        Double k = 1 / (Kc + Kl * distance + Kq * Math.pow(distance, 2));
         if (k > 1) k = 1.0;
         return new Color((int) (_color.getRed() * k), (int) (_color.getGreen() * k), (int) (_color.getBlue() * k));
     }
