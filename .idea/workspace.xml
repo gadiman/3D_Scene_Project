@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bea094ad-def7-475d-9cec-f7a0ba2ab531" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Geometries/FlatGeometry.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Elements/DirectionalLight.java" afterPath="$PROJECT_DIR$/src/Elements/DirectionalLight.java" />
-      <change beforePath="$PROJECT_DIR$/src/Elements/PointLight.java" afterPath="$PROJECT_DIR$/src/Elements/PointLight.java" />
-      <change beforePath="$PROJECT_DIR$/src/Elements/SpotLight.java" afterPath="$PROJECT_DIR$/src/Elements/SpotLight.java" />
-      <change beforePath="$PROJECT_DIR$/src/Geometries/Geometry.java" afterPath="$PROJECT_DIR$/src/Geometries/Geometry.java" />
-      <change beforePath="$PROJECT_DIR$/src/Geometries/Plane.java" afterPath="$PROJECT_DIR$/src/Geometries/Plane.java" />
-      <change beforePath="$PROJECT_DIR$/src/Geometries/Triangle.java" afterPath="$PROJECT_DIR$/src/Geometries/Triangle.java" />
-      <change beforePath="$PROJECT_DIR$/src/Primitives/Material.java" afterPath="$PROJECT_DIR$/src/Primitives/Material.java" />
-      <change beforePath="$PROJECT_DIR$/src/Renderer/Render.java" afterPath="$PROJECT_DIR$/src/Renderer/Render.java" />
-      <change beforePath="$PROJECT_DIR$/src/scene/Scene.java" afterPath="$PROJECT_DIR$/src/scene/Scene.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,26 +25,10 @@
       <file leaf-file-name="LightTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Unitest/LightTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="22" column="70" lean-forward="true" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
+            <state relative-caret-position="442">
+              <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Render.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Renderer/Render.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="124" column="18" lean-forward="true" selection-start-line="124" selection-start-column="18" selection-end-line="124" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2870#2871#0" expanded="true" />
-                <element signature="e#2912#2913#0" expanded="true" />
-                <element signature="e#4921#4940#0" expanded="true" />
-                <element signature="e#5572#5597#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,6 +80,16 @@
         <entry file="file://$PROJECT_DIR$/Point test.jpg">
           <provider selected="true" editor-type-id="images">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageWriterTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Unitest/ImageWriterTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -346,7 +330,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LightTest.emmissionTest">
+  <component name="RunManager" selected="JUnit.LightTest.pointLightTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -418,7 +402,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="LightTest.pointLightTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LightTest.pointLightTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="Unitest.*" />
@@ -430,7 +414,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="Unitest" />
       <option name="MAIN_CLASS_NAME" value="Unitest.LightTest" />
-      <option name="METHOD_NAME" value="pointLightTest2" />
+      <option name="METHOD_NAME" value="pointLightTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -557,16 +541,16 @@
       <item index="0" class="java.lang.String" itemvalue="JUnit.LightTest.emmissionTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.LightTest" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.LightTest.shadowTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.LightTest.pointLightTest2" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.LightTest.spotLightTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.LightTest.spotLightTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.LightTest.pointLightTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.LightTest.emmissionTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.LightTest.spotLightTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.LightTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.LightTest.shadowTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.LightTest.pointLightTest2" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.LightTest.pointLightTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.LightTest.emmissionTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.LightTest.spotLightTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.LightTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.LightTest.shadowTest" />
       </list>
     </recent_temporary>
   </component>
@@ -668,33 +652,40 @@
       <option name="project" value="LOCAL" />
       <updated>1528036872745</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary=",mhg,">
+      <created>1528043250911</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1528043250911</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LightTest - 2018.06.03 at 18h 35m 43s.xml">
-      <configuration name="LightTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LightTest - 2018.06.03 at 18h 50m 07s.xml">
       <configuration name="LightTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="LightTest - 2018.06.03 at 19h 19m 18s.xml">
       <configuration name="LightTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LightTest_emmissionTest - 2018.06.03 at 18h 11m 23s.xml">
-      <configuration name="LightTest.emmissionTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LightTest_emmissionTest - 2018.06.03 at 18h 22m 19s.xml">
-      <configuration name="LightTest.emmissionTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LightTest_emmissionTest - 2018.06.03 at 19h 23m 10s.xml">
       <configuration name="LightTest.emmissionTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LightTest_pointLightTest - 2018.06.03 at 20h 34m 53s.xml">
+      <configuration name="LightTest.pointLightTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LightTest_pointLightTest - 2018.06.03 at 20h 35m 50s.xml">
+      <configuration name="LightTest.pointLightTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LightTest_pointLightTest - 2018.06.03 at 20h 36m 42s.xml">
+      <configuration name="LightTest.pointLightTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LightTest_pointLightTest - 2018.06.03 at 20h 38m 04s.xml">
+      <configuration name="LightTest.pointLightTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="LightTest_pointLightTest2 - 2018.06.03 at 18h 42m 16s.xml">
       <configuration name="LightTest.pointLightTest2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LightTest_shadowTest - 2018.06.03 at 18h 39m 19s.xml">
-      <configuration name="LightTest.shadowTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="LightTest_shadowTest - 2018.06.03 at 18h 48m 52s.xml">
       <configuration name="LightTest.shadowTest" configurationId="JUnit" />
@@ -714,6 +705,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.49713877" order="12" side_tool="false" content_ui="tabs" />
@@ -724,7 +716,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3755047" sideWeight="0.19098713" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3120915" sideWeight="0.8090129" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3267974" sideWeight="0.7424893" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267974" sideWeight="0.7424893" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32837838" sideWeight="0.49713877" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -835,7 +827,8 @@
     <MESSAGE value="כלוםם" />
     <MESSAGE value="hhh" />
     <MESSAGE value="צבעים ורנדר" />
-    <option name="LAST_COMMIT_MESSAGE" value="צבעים ורנדר" />
+    <MESSAGE value=",mhg," />
+    <option name="LAST_COMMIT_MESSAGE" value=",mhg," />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -847,7 +840,7 @@
           <option name="timeStamp" value="82" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="84" />
+      <option name="time" value="85" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -862,13 +855,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Renderer/ImageWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-314">
-          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/Desktop/project source/src/tests/TriangleTest.java" />
     <entry file="file://$PROJECT_DIR$/src/Unitest/VectorTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1160,11 +1146,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Point test.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Point test 2.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1180,7 +1161,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Spot test 3.jpg">
+    <entry file="file://$PROJECT_DIR$/Spot test.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -1190,9 +1171,17 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Spot test.jpg">
+    <entry file="file://$PROJECT_DIR$/Spot test 3.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Unitest/ImageWriterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Emmission test.jpg">
@@ -1200,10 +1189,15 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Point test.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Unitest/LightTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="70" lean-forward="true" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
+        <state relative-caret-position="442">
+          <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
