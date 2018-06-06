@@ -1,11 +1,10 @@
 package Elements;
 
-import Primitives.Point3D;
-
-import java.awt.Color;
+import java.awt.*;
+import java.util.Map;
 
 public class AmbientLight extends Light {
-    private final double Ka = 1.0;
+    private final double Ka = 0.1;
 
     //****************************constructors****************************************//
     public AmbientLight() {
@@ -18,6 +17,15 @@ public class AmbientLight extends Light {
 
     public AmbientLight(int r, int g, int b) {
         super(new Color(r, g, b));
+    }
+
+
+    public AmbientLight(Map<String, String> attributes){
+        String[] ambientLightColors = attributes
+                .get("color" ).split("\\s+");
+        _color = new Color((int)(255 * Double.valueOf(ambientLightColors[0])),
+                (int)(255 * Double.valueOf(ambientLightColors[1])),
+                (int)(255 * Double.valueOf(ambientLightColors[2])));
     }
 
     // ***************** Getters/Setters ********************** //
@@ -35,7 +43,9 @@ public class AmbientLight extends Light {
     }
 
     @Override
-    public Color getIntensity(Point3D p) {
+    public Color getIntensity() {
         return new Color((int) (_color.getRed() * Ka), (int) (_color.getGreen() * Ka), (int) (_color.getBlue() * Ka));
     }
+
+
 }

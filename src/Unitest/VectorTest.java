@@ -4,7 +4,8 @@ import Primitives.Point3D;
 import Primitives.Vector;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.testng.AssertJUnit.assertTrue;
+
 
 public class VectorTest {
 

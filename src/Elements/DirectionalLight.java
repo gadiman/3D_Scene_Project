@@ -30,13 +30,13 @@ public class DirectionalLight extends Light implements LightSource {
     }
 
     public void setDirection(Vector direction) {
-        this.direction = new Vector(direction);
+        this.direction = direction;
     }
     //********************************functions**************************************//
 
     @Override
     public Color getIntensity(Point3D p) {
-        return super.getIntensity(p);
+        return super.getIntensity();
     }
 
     public Vector getL(Point3D point) {

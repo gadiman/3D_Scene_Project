@@ -1,12 +1,9 @@
 package Elements;
 
-import Primitives.Point3D;
-
-import java.awt.Color;
+import java.awt.*;
 
 public abstract class Light {
     protected Color _color;
-    protected Color getIntensity(Point3D p){return _color;}
 
     //********************************constructors************************************//
 
@@ -17,4 +14,8 @@ public abstract class Light {
     public Light(Color color) {
         _color = color;
     }
+
+    //***********************************functions************************************//
+    protected Color getIntensity(){return _color;}
+
 }

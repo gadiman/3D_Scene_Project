@@ -12,6 +12,7 @@ public class SpotLight extends PointLight {
     public SpotLight(Color color, Point3D position, Double kc, Double kl, Double kq, Vector direction) {
         super(color, position, kc, kl, kq);
         this.direction = new Vector(direction);
+        this.direction.normalize();
     }
 
     public SpotLight(SpotLight _spotLight) {
@@ -22,11 +23,12 @@ public class SpotLight extends PointLight {
     //********************************functions**************************************//
 
     public Color getIntensity(Point3D p3d) {
-        Vector L0 = new Vector(p3d, position);
+        Color pointColor = super.getIntensity(p3d);
+        Vector L0 = getL(p3d);
         L0.normalize();
         Double dotprodact = Math.abs(L0.dotProduct(direction));
         if (dotprodact > 1) dotprodact = 1.0;
-        Color pointColor = super.getIntensity(p3d);
+
         return new Color((int) (pointColor.getRed() * dotprodact), (int) (pointColor.getGreen() * dotprodact),
                 (int) (pointColor.getBlue() * dotprodact));
     }
