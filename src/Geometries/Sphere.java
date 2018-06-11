@@ -6,6 +6,7 @@ import Primitives.Vector;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class Sphere extends RadialGeometry implements Comparable<Sphere>{
 
@@ -29,6 +30,17 @@ public class Sphere extends RadialGeometry implements Comparable<Sphere>{
         _center = new Point3D(center);
     }
 
+    public Sphere(Map<String, String> attributes){
+
+        String[] centerPoints = attributes
+                .get("center" ).split("\\s+");
+
+        _center = new Point3D(Double.valueOf(centerPoints[0]),
+                Double.valueOf(centerPoints[1]),
+                Double.valueOf(centerPoints[2]));
+
+        _radius = Double.valueOf(attributes.get("radius"));
+    }
     //********************************getters and setters**********************//
     public Point3D getCenter() {
         return new Point3D(_center);

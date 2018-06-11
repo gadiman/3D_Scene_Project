@@ -4,6 +4,8 @@ import Primitives.Point3D;
 import Primitives.Vector;
 import Primitives.Ray;
 
+import java.util.Map;
+
 public class Camera {
     Point3D _center;
     Vector Vup;
@@ -19,6 +21,37 @@ public class Camera {
         Vup = new Vector(new Point3D(1.0, 0.0, 0.0));
         Vto = new Vector(new Point3D(0.0, 0.0, -1.0));
         Vright = Vup.crossProduct(Vto);
+    }
+
+    public Camera (Map<String, String> attributes){
+
+        String[] P0params = attributes
+                .get("P0").split("\\s+");
+
+        _center = new Point3D(Double.valueOf(P0params[0]),
+                Double.valueOf(P0params[1]),
+                Double.valueOf(P0params[2]));
+
+        String[] vToParam = attributes
+                .get("vTo").split("\\s+");
+        Vto = new Vector(Double.valueOf(vToParam[0]),
+                Double.valueOf(vToParam[1]),
+                Double.valueOf(vToParam[2]));
+
+        String[] vUpParam =  attributes
+                .get("vUp").split("\\s+");
+        Vup = new Vector(Double.valueOf(vUpParam[0]),
+                Double.valueOf(vUpParam[1]),
+                Double.valueOf(vUpParam[2]));
+
+        Vright = Vup.crossProduct(Vto);
+        Vup = Vto.crossProduct(Vright);
+
+        Vup.normalize();
+        Vto.normalize();
+        Vright.normalize();
+
+
     }
 
     //Copy constructor

@@ -6,6 +6,7 @@ import Primitives.Ray;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class Triangle extends Geometry implements Comparable<Triangle>, FlatGeometry {
     private Point3D _p1;
@@ -31,6 +32,31 @@ public class Triangle extends Geometry implements Comparable<Triangle>, FlatGeom
         _p1 = new Point3D(p1);
         _p2 = new Point3D(p2);
         _p3 = new Point3D(p3);
+    }
+
+    public Triangle(Map<String, String> attributes){
+
+        String[] P0coordinates = attributes
+                .get("P0" ).split("\\s+");
+
+        _p1 = new Point3D(Double.valueOf(P0coordinates[0]),
+                Double.valueOf(P0coordinates[1]),
+                Double.valueOf(P0coordinates[2]));
+
+        String[] P1coordinates = attributes
+                .get("P1" ).split("\\s+");
+
+        _p2 = new Point3D(Double.valueOf(P1coordinates[0]),
+                Double.valueOf(P1coordinates[1]),
+                Double.valueOf(P1coordinates[2]));
+
+        String[] P2coordinates = attributes
+                .get("P2" ).split("\\s+");
+
+        _p3 = new Point3D(Double.valueOf(P2coordinates[0]),
+                Double.valueOf(P2coordinates[1]),
+                Double.valueOf(P2coordinates[2]));
+
     }
 
     //***************************getters and setters***************************************//
