@@ -170,4 +170,6 @@ public class Camera {
     public String toString() {
         return "Vto: " + Vto + "\n" + "Vup: " + Vup + "\n" + "Vright:" + Vright + ".";
     }
+
+
 }
