@@ -18,7 +18,7 @@ public class Table_Final_Test {
         Scene scene = new Scene();
         scene.setScreenDistance(50);
         scene.setBackgroundColor(new Color(255,255,255));
-        scene.RoutinX(scene.get_camera().get_Vright(),0.75);
+        //scene.RoutinX(scene.get_camera().get_Vright(),0.75);
 
         final Point3D Left_A= new Point3D(-100, -200, -73);
         final Point3D Left_B=new Point3D(0, -100, -73);
@@ -117,7 +117,7 @@ public class Table_Final_Test {
 
 
 
-       // scene.RoutinX(scene.get_camera().get_Vright(),120);
+        //scene.RoutinX(scene.get_camera().get_Vright(),10);
 
         scene.addLight(new SpotLight(new Color(255, 100, 100), new Point3D(150, 0, -50),
                 0.1, 0.00001, 0.000005, new Vector(2, 2, -3)));

@@ -123,8 +123,8 @@ public class Scene {
     public void RoutinX(Vector src ,double radians) {
         float cos, sin;
 
-        cos = (float) Math.cos(radians);
-        sin = (float) Math.sin(radians);
+        cos = (float) Math.cos(Math.toRadians(radians));
+        sin = (float) Math.sin(Math.toRadians(radians));
         Vector dst = new Vector();
 
         double y = src.getHead().getY().getCoordinate() , z = src.getHead().getZ().getCoordinate();
@@ -133,15 +133,15 @@ public class Scene {
         new Coordinate(sin * y + cos * z)));
         dst.normalize();
        this._camera.set_Vright(new Vector(dst));
-      RoutinZ(_camera.get_Vup(),radians);
+       RoutinZ(_camera.get_Vup(),radians);
        RoutinY(_camera.get_Vto(),radians);
     }
 
     public void RoutinY(Vector src ,double radians) {
         float cos, sin;
 
-        cos = (float) Math.cos(radians);
-        sin = (float) Math.sin(radians);
+        cos = (float) Math.cos(Math.toRadians(radians));
+        sin = (float) Math.sin(Math.toRadians(radians));
         Vector dst = new Vector();
 
         double x = src.getHead().getX().getCoordinate(),y=src.getHead().getY().getCoordinate(), z = src.getHead().getZ().getCoordinate();
