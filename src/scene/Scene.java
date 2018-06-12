@@ -4,6 +4,9 @@ import Elements.AmbientLight;
 import Elements.Camera;
 import Elements.LightSource;
 import Geometries.Geometry;
+import Primitives.Coordinate;
+import Primitives.Point3D;
+import Primitives.Vector;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -113,4 +116,55 @@ public class Scene {
     public void addLight(LightSource light){
         _lights.add(light);
     }
+
+
+
+
+    public void RoutinX(Vector src ,double radians) {
+        float cos, sin;
+
+        cos = (float) Math.cos(radians);
+        sin = (float) Math.sin(radians);
+        Vector dst = new Vector();
+
+        double y = src.getHead().getY().getCoordinate() , z = src.getHead().getZ().getCoordinate();
+        dst= new Vector(new Point3D(src.getHead().getX(),
+        new Coordinate( cos * y - sin * z),
+        new Coordinate(sin * y + cos * z)));
+        dst.normalize();
+       this._camera.set_Vright(new Vector(dst));
+      RoutinZ(_camera.get_Vup(),radians);
+       RoutinY(_camera.get_Vto(),radians);
+    }
+
+    public void RoutinY(Vector src ,double radians) {
+        float cos, sin;
+
+        cos = (float) Math.cos(radians);
+        sin = (float) Math.sin(radians);
+        Vector dst = new Vector();
+
+        double x = src.getHead().getX().getCoordinate(),y=src.getHead().getY().getCoordinate(), z = src.getHead().getZ().getCoordinate();
+        dst=new Vector(new Point3D(new Coordinate(cos * x - sin * z),new Coordinate( cos * y - sin * z),new Coordinate(sin * y + cos * z)));
+        dst.normalize();
+        this._camera.set_Vto(new Vector(dst));
+
+
+    }
+
+    public void RoutinZ(Vector src ,double radians) {
+
+        Vector dst = new Vector();
+
+        dst = _camera.get_Vup().crossProduct(_camera.get_Vto());
+
+
+        dst.normalize();
+        this._camera.set_Vup(new Vector(dst));
+
+
+
+    }
+
+
 }

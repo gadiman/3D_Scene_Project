@@ -111,6 +111,10 @@ public class Camera {
         this.Vto = new Vector(_Vto);
     }
 
+    public void set_Vright(Vector _Vright) {
+        this.Vright = new Vector(_Vright);
+    }
+
     public void set_center(Point3D center) {
         this._center = new Point3D(center);
     }
