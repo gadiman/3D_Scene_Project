@@ -47,11 +47,12 @@ public class TableTest {
     }
 
 
-    public Point3D add_point(Point3D point3D, Double x, Double y, Double z) {
-        Double X = point3D.getX().getCoordinate() + x;
-        Double Y = point3D.getY().getCoordinate() + y;
-        Double Z = point3D.getZ().getCoordinate() + z;
-        return new Point3D(X,Y,Z);
+    public Point3D add_point(Point3D point3D, double x, double y, double z) {
+        double X = point3D.getX().getCoordinate() + x;
+        double Y = point3D.getY().getCoordinate() + y;
+        double Z = point3D.getZ().getCoordinate() + z;
+        Point3D p = new Point3D(X, Y, Z);
+        return p;
     }
 
 
@@ -81,13 +82,13 @@ public class TableTest {
         scene.addGeometry(Table.get(5));
 
         Point3D Leg_front_left_A = new Point3D(-80, -90, -61);
-        Point3D Leg_front_left_B = new Point3D(-80, -75, -61);
-        Point3D Leg_front_left_C = new Point3D(-190, -75, -61);
-        Point3D Leg_front_left_D = new Point3D(-190, -90, -61);
+        Point3D Leg_front_left_B = add_point(Leg_front_left_A,0,15,0);//new Point3D(-80, -75, -61);
+        Point3D Leg_front_left_C = new Point3D(-240, -75, -61);
+        Point3D Leg_front_left_D = new Point3D(-240, -90, -61);
         Point3D Leg_front_left_E = new Point3D(-80, -90, -76);
         Point3D Leg_front_left_F = new Point3D(-80, -75, -76);
-        Point3D Leg_front_left_G = new Point3D(-190, -75, -76);
-        Point3D Leg_front_left_H = new Point3D(-190, -90, -76);
+        Point3D Leg_front_left_G = new Point3D(-240, -75, -76);
+        Point3D Leg_front_left_H = new Point3D(-240, -90, -76);
 
         List<Quadrilateral> Leg_front_left = qube(Leg_front_left_A, Leg_front_left_B, Leg_front_left_C,
                 Leg_front_left_D, Leg_front_left_E, Leg_front_left_F, Leg_front_left_G, Leg_front_left_H);
@@ -99,13 +100,17 @@ public class TableTest {
         scene.addGeometry(Leg_front_left.get(4));
         scene.addGeometry(Leg_front_left.get(5));
 
-        Point3D Leg_front_right_A=new Point3D(-80,75,-61);
-        Point3D Leg_front_right_G=new Point3D(-190,90,-76);
+        Point3D Leg_front_right_A = new Point3D(-80, 75, -61);
+        Point3D Leg_front_right_B = new Point3D(-80, 90, -61);
+        Point3D Leg_front_right_G = new Point3D(-240, 90, -76);
+        Point3D Leg_front_right_C = add_point(Leg_front_right_G, 0, 0, 15);
+        Point3D Leg_front_right_D = add_point(Leg_front_right_A, -160, 0, 0);
+        Point3D Leg_front_right_E = add_point(Leg_front_right_A, 0.0, 0.0, -15.0);
+        Point3D Leg_front_right_F = add_point(Leg_front_right_G, 160, 0.0, 0.0);
+        Point3D Leg_front_right_H = add_point(Leg_front_right_G, 0, -15, 0.0);
 
-        List<Quadrilateral> Leg_frong_right=qube(Leg_front_right_A,add_point(Leg_front_right_A,0.0,15.0,0.0),
-                add_point(Leg_front_right_G,0.0,0.0,15.0),add_point(Leg_front_right_A,-110.0,0.0,0.0),
-                add_point(Leg_front_right_A,0.0,0.0,-15.0),add_point(Leg_front_right_G,110.0,0.0,0.0),
-                Leg_front_right_G,add_point(Leg_front_right_G,-15.0,0.0,0.0));
+        List<Quadrilateral> Leg_frong_right = qube(Leg_front_right_A, Leg_front_right_B, Leg_front_right_C, Leg_front_right_D
+                , Leg_front_right_E, Leg_front_right_F, Leg_front_right_G, Leg_front_right_H);
 
         scene.addGeometry(Leg_frong_right.get(0));
         scene.addGeometry(Leg_frong_right.get(1));
@@ -115,8 +120,14 @@ public class TableTest {
         scene.addGeometry(Leg_frong_right.get(5));
 
 
-        scene.addLight(new SpotLight(new Color(255, 100, 100), new Point3D(50, 0, -50),
-                0.1, 0.00001, 0.000005, new Vector(2, 2, -3)));
+
+        Quadrilateral background=new Quadrilateral(new Point3D(-240,-200,-51),new Point3D(-240,200,-51),
+                new Point3D(-240,200,-151),new Point3D(-240,-200,-151));
+        background.set_emmission(new Color(255,255,255));
+        scene.addGeometry(background);
+
+        scene.addLight(new SpotLight(new Color(100, 100, 100), new Point3D(240, 50, -50),
+                0.1, 0.00001, 0.000005, new Vector(-2, 0, -3)));
 
         ImageWriter imageWriter = new ImageWriter("Table test", 500, 500, 500, 500);
         Render render = new Render(imageWriter, scene);
