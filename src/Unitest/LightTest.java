@@ -119,7 +119,7 @@ public class LightTest {
         scene.addGeometry(safam4);
 
         scene.addLight(new SpotLight(new Color(255, 100, 100), new Point3D(150, 0, -50),
-                0.1, 0.00001, 0.000005, new Vector(2, 2, -3)));
+                0.1, 0.00001, 0.000005, new Vector(1, 0, -3)));
         ImageWriter imageWriter = new ImageWriter("chagay test", 500, 500, 500, 500);
         Render render = new Render(imageWriter, scene);
         render.renderImage();
