@@ -8,7 +8,6 @@ import Renderer.ImageWriter;
 import Renderer.Render;
 import org.junit.jupiter.api.Test;
 import scene.Scene;
-
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -18,22 +17,22 @@ public class TableTest {
     public List<Quadrilateral> qube(Point3D A, Point3D B, Point3D C, Point3D D, Point3D E, Point3D F, Point3D G, Point3D H) {
 
         Quadrilateral up = new Quadrilateral(A, B, F, E);
-        up.set_emmission(new Color(200, 50, 50));
+        up.set_emmission(new Color(228, 128, 58));
 
         Quadrilateral down = new Quadrilateral(D, C, G, H);
-        down.set_emmission(new Color(200, 50, 50));
+        down.set_emmission(new Color(228, 128, 58));
 
         Quadrilateral right = new Quadrilateral(B, C, G, F);
-        right.set_emmission(new Color(200, 50, 50));
+        right.set_emmission(new Color(228, 128, 58));
 
         Quadrilateral left = new Quadrilateral(A, D, H, E);
-        left.set_emmission(new Color(200, 50, 50));
+        left.set_emmission(new Color(228, 128, 58));
 
         Quadrilateral front = new Quadrilateral(A, D, C, B);
-        front.set_emmission(new Color(200, 50, 50));
+        front.set_emmission(new Color(228, 128, 58));
 
         Quadrilateral beak = new Quadrilateral(E, H, G, F);
-        beak.set_emmission(new Color(200, 50, 50));
+        beak.set_emmission(new Color(228, 128, 58));
 
         List<Quadrilateral> temp = new ArrayList<Quadrilateral>();
         temp.add(up);
@@ -82,7 +81,7 @@ public class TableTest {
         scene.addGeometry(Table.get(5));
 
         Point3D Leg_front_left_A = new Point3D(-80, -90, -61);
-        Point3D Leg_front_left_B = add_point(Leg_front_left_A,0,15,0);//new Point3D(-80, -75, -61);
+        Point3D Leg_front_left_B = add_point(Leg_front_left_A, 0, 15, 0);//new Point3D(-80, -75, -61);
         Point3D Leg_front_left_C = new Point3D(-240, -75, -61);
         Point3D Leg_front_left_D = new Point3D(-240, -90, -61);
         Point3D Leg_front_left_E = new Point3D(-80, -90, -76);
@@ -119,20 +118,56 @@ public class TableTest {
         scene.addGeometry(Leg_frong_right.get(4));
         scene.addGeometry(Leg_frong_right.get(5));
 
+        Point3D Leg_back_left_A = new Point3D(-80, -90, -126);
+        Point3D Leg_back_left_G = new Point3D(-240, -75, -141);
+        Point3D Leg_back_left_B = add_point(Leg_back_left_A, 0, 15, 0);
+        Point3D Leg_back_left_C = add_point(Leg_back_left_G, 0, 0, 15);
+        Point3D Leg_back_left_D = add_point(Leg_back_left_A, -160, 0, 0);
+        Point3D Leg_back_left_E = add_point(Leg_back_left_A, 0, 0, -15);
+        Point3D Leg_back_left_F = add_point(Leg_back_left_G, 160, 0.0, 0.0);
+        Point3D Leg_back_left_H = add_point(Leg_back_left_G, 0, -15, 0.0);
+
+        List<Quadrilateral> Leg_back_left = qube(Leg_back_left_A, Leg_back_left_B, Leg_back_left_C, Leg_back_left_D,
+                Leg_back_left_E, Leg_back_left_F, Leg_back_left_G, Leg_back_left_H);
+
+        scene.addGeometry(Leg_back_left.get(0));
+        scene.addGeometry(Leg_back_left.get(1));
+        scene.addGeometry(Leg_back_left.get(2));
+        scene.addGeometry(Leg_back_left.get(3));
+        scene.addGeometry(Leg_back_left.get(4));
+        scene.addGeometry(Leg_back_left.get(5));
+
+        Point3D Leg_back_right_A = new Point3D(-80, 75, -126);
+        Point3D Leg_back_right_G = new Point3D(-240, 90, -141);
+        Point3D Leg_back_right_B = add_point(Leg_back_right_A, 0, 15, 0);
+        Point3D Leg_back_right_C = add_point(Leg_back_right_G, 0, 0, 15);
+        Point3D Leg_back_right_D = add_point(Leg_back_right_A, -160, 0, 0);
+        Point3D Leg_back_right_E = add_point(Leg_back_right_A, 0, 0, -15);
+        Point3D Leg_back_right_F = add_point(Leg_back_right_G, 160, 0, 0);
+        Point3D Leg_back_right_H = add_point(Leg_back_right_G, 0, -15, 0);
+
+        List<Quadrilateral> Leg_back_right = qube(Leg_back_right_A, Leg_back_right_B, Leg_back_right_C, Leg_back_right_D,
+                Leg_back_right_E, Leg_back_right_F, Leg_back_right_G, Leg_back_right_H);
+
+        scene.addGeometry(Leg_back_right.get(0));
+        scene.addGeometry(Leg_back_right.get(1));
+        scene.addGeometry(Leg_back_right.get(2));
+        scene.addGeometry(Leg_back_right.get(3));
+        scene.addGeometry(Leg_back_right.get(4));
+        scene.addGeometry(Leg_back_right.get(5));
 
 
-        Quadrilateral background=new Quadrilateral(new Point3D(-240,-200,-51),new Point3D(-240,200,-51),
-                new Point3D(-240,200,-151),new Point3D(-240,-200,-151));
-        background.set_emmission(new Color(255,255,255));
+        Quadrilateral background = new Quadrilateral(new Point3D(-250, -250, -51), new Point3D(-250, 250, -51),
+                new Point3D(-250, 250, -151), new Point3D(-250, -250, -151));
+        background.set_emmission(new Color(2, 0, 0));
         scene.addGeometry(background);
 
-        scene.addLight(new SpotLight(new Color(100, 100, 100), new Point3D(240, 50, -50),
+        scene.addLight(new SpotLight(new Color(150, 100, 100), new Point3D(240, 50, -50),
                 0.1, 0.00001, 0.000005, new Vector(-2, 0, -3)));
 
         ImageWriter imageWriter = new ImageWriter("Table test", 500, 500, 500, 500);
         Render render = new Render(imageWriter, scene);
         render.renderImage();
         render.writeToImage();
-
     }
 }

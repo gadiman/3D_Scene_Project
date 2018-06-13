@@ -105,10 +105,11 @@
       <file leaf-file-name="TableTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Unitest/TableTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1235">
-              <caret line="128" column="82" lean-forward="false" selection-start-line="128" selection-start-column="82" selection-end-line="128" selection-end-column="82" />
+            <state relative-caret-position="1354">
+              <caret line="172" column="1" lean-forward="false" selection-start-line="172" selection-start-column="1" selection-end-line="172" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1195#1210#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -518,7 +519,7 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="LightTest.chagayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TableTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="Unitest.*" />
@@ -529,9 +530,9 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="Unitest" />
-      <option name="MAIN_CLASS_NAME" value="Unitest.LightTest" />
-      <option name="METHOD_NAME" value="chagayTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="Unitest.TableTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -711,19 +712,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.LightTest.chagayTest" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.Rec_Test" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.Table_Final_Test.Table_Test" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Table_Final_Test" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TableTest.Table_Test" />
+      <item index="0" class="java.lang.String" itemvalue="TestNG.Rec_Test" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Table_Final_Test.Table_Test" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Table_Final_Test" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TableTest.Table_Test" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TableTest" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.TableTest.Table_Test" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Table_Final_Test.Table_Test" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Table_Final_Test" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.Rec_Test" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.LightTest.chagayTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TableTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Table_Final_Test.Table_Test" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Table_Final_Test" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.Rec_Test" />
       </list>
     </recent_temporary>
   </component>
@@ -839,27 +840,22 @@
       <option name="project" value="LOCAL" />
       <updated>1528878014215</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="aukkjo">
+      <created>1528881829287</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1528881829287</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TableTest_Table_Test - 2018.06.13 at 11h 30m 25s.xml">
-      <configuration name="TableTest.Table_Test" configurationId="JUnit" />
+    <history-entry file="TableTest - 2018.06.13 at 12h 58m 32s.xml">
+      <configuration name="TableTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TableTest_Table_Test - 2018.06.13 at 11h 37m 27s.xml">
-      <configuration name="TableTest.Table_Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TableTest_Table_Test - 2018.06.13 at 11h 45m 26s.xml">
-      <configuration name="TableTest.Table_Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TableTest_Table_Test - 2018.06.13 at 11h 46m 24s.xml">
-      <configuration name="TableTest.Table_Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TableTest_Table_Test - 2018.06.13 at 11h 51m 10s.xml">
-      <configuration name="TableTest.Table_Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TableTest_Table_Test - 2018.06.13 at 11h 57m 30s.xml">
-      <configuration name="TableTest.Table_Test" configurationId="JUnit" />
+    <history-entry file="TableTest - 2018.06.13 at 13h 19m 48s.xml">
+      <configuration name="TableTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TableTest_Table_Test - 2018.06.13 at 12h 07m 50s.xml">
       <configuration name="TableTest.Table_Test" configurationId="JUnit" />
@@ -871,6 +867,18 @@
       <configuration name="TableTest.Table_Test" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TableTest_Table_Test - 2018.06.13 at 12h 21m 04s.xml">
+      <configuration name="TableTest.Table_Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TableTest_Table_Test - 2018.06.13 at 12h 42m 14s.xml">
+      <configuration name="TableTest.Table_Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TableTest_Table_Test - 2018.06.13 at 13h 03m 50s.xml">
+      <configuration name="TableTest.Table_Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TableTest_Table_Test - 2018.06.13 at 13h 06m 35s.xml">
+      <configuration name="TableTest.Table_Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TableTest_Table_Test - 2018.06.13 at 13h 22m 59s.xml">
       <configuration name="TableTest.Table_Test" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -989,7 +997,8 @@
     <MESSAGE value="צבעים ורנדר" />
     <MESSAGE value=",mhg," />
     <MESSAGE value="ךועיךוע" />
-    <option name="LAST_COMMIT_MESSAGE" value="ךועיךוע" />
+    <MESSAGE value="aukkjo" />
+    <option name="LAST_COMMIT_MESSAGE" value="aukkjo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1308,10 +1317,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Unitest/TableTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1235">
-          <caret line="128" column="82" lean-forward="false" selection-start-line="128" selection-start-column="82" selection-end-line="128" selection-end-column="82" />
+        <state relative-caret-position="1354">
+          <caret line="172" column="1" lean-forward="false" selection-start-line="172" selection-start-column="1" selection-end-line="172" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1195#1210#0" expanded="true" />
           </folding>
         </state>
       </provider>
