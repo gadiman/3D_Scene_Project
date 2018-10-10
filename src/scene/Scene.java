@@ -119,8 +119,8 @@ public class Scene {
 
 
 
-
-    public void RoutinX(Vector src ,double radians) {
+   //routin the item around the X's axis
+    public Vector RoutinX(Vector src ,double radians) {
         float cos, sin;
 
         cos = (float) Math.cos(Math.toRadians(radians));
@@ -128,16 +128,13 @@ public class Scene {
         Vector dst = new Vector();
 
         double y = src.getHead().getY().getCoordinate() , z = src.getHead().getZ().getCoordinate();
-        dst= new Vector(new Point3D(src.getHead().getX(),
-        new Coordinate( cos * y - sin * z),
-        new Coordinate(sin * y + cos * z)));
-        dst.normalize();
-       this._camera.set_Vright(new Vector(dst));
-       RoutinZ(_camera.get_Vup(),radians);
-       RoutinY(_camera.get_Vto(),radians);
+        return new Vector(new Point3D(src.getHead().getX(),
+                new Coordinate( cos * y - sin * z),
+                new Coordinate(sin * y + cos * z)));
+        //dst.normalize();
     }
-
-    public void RoutinY(Vector src ,double radians) {
+    //routin the item around the Y's axis
+    public Vector RoutinY(Vector src ,double radians) {
         float cos, sin;
 
         cos = (float) Math.cos(Math.toRadians(radians));
@@ -145,26 +142,25 @@ public class Scene {
         Vector dst = new Vector();
 
         double x = src.getHead().getX().getCoordinate(),y=src.getHead().getY().getCoordinate(), z = src.getHead().getZ().getCoordinate();
-        dst=new Vector(new Point3D(new Coordinate(cos * x - sin * z),new Coordinate( cos * y - sin * z),new Coordinate(sin * y + cos * z)));
-        dst.normalize();
-        this._camera.set_Vto(new Vector(dst));
+        return new Vector(new Point3D(new Coordinate(cos * x - sin * z),src.getHead().getY(),new Coordinate(sin * x + cos * z)));
+        //dst.normalize();
 
 
     }
+    //routin the item around the Z's axis
+    public Vector RoutinZ(Vector src ,double radians) {
 
-    public void RoutinZ(Vector src ,double radians) {
+        float cos, sin;
 
+        cos = (float) Math.cos(Math.toRadians(radians));
+        sin = (float) Math.sin(Math.toRadians(radians));
         Vector dst = new Vector();
 
-        dst = _camera.get_Vup().crossProduct(_camera.get_Vto());
-
-
-        dst.normalize();
-        this._camera.set_Vup(new Vector(dst));
+        double x = src.getHead().getX().getCoordinate(),y=src.getHead().getY().getCoordinate(), z = src.getHead().getZ().getCoordinate();
+        return new Vector(new Point3D(new Coordinate(cos * x - sin * y),new Coordinate(cos * y + sin * x),src.getHead().getZ()));
 
 
 
     }
-
 
 }

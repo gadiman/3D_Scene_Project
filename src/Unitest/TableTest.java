@@ -1,5 +1,6 @@
 package Unitest;
 
+import Elements.DirectionalLight;
 import Elements.SpotLight;
 import Geometries.Quadrilateral;
 import Primitives.Point3D;
@@ -8,13 +9,15 @@ import Renderer.ImageWriter;
 import Renderer.Render;
 import org.junit.jupiter.api.Test;
 import scene.Scene;
+
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class TableTest {
 
-    public List<Quadrilateral> qube(Point3D A, Point3D B, Point3D C, Point3D D, Point3D E, Point3D F, Point3D G, Point3D H) {
+    //function that get 8 points and return a cube
+    public List<Quadrilateral> cube(Point3D A, Point3D B, Point3D C, Point3D D, Point3D E, Point3D F, Point3D G, Point3D H) {
 
         Quadrilateral up = new Quadrilateral(A, B, F, E);
         up.set_emmission(new Color(228, 128, 58));
@@ -45,7 +48,7 @@ public class TableTest {
         return temp;
     }
 
-
+    //functionthat get point and 3 values and returnd new corect point
     public Point3D add_point(Point3D point3D, double x, double y, double z) {
         double X = point3D.getX().getCoordinate() + x;
         double Y = point3D.getY().getCoordinate() + y;
@@ -61,7 +64,15 @@ public class TableTest {
         Scene scene = new Scene();
         scene.setScreenDistance(50);
         scene.setBackgroundColor(new Color(2, 0, 0));
-
+        //scene.set_camera(new Camera(new Point3D(40,0,100),new Vector(1,0,0),new Vector(0,0,-1)));
+        //----The code of the routain , you can get a look in scene class
+        //ROUTING UP/DOWN
+        // scene.set_camera(new Camera(new Point3D(0,0,0), scene.RoutinY(scene.get_camera().get_Vup(),-45),
+        //       scene.RoutinY(scene.get_camera().get_Vto(),-45)));
+        //ROUTING AROUND
+        //scene.set_camera(new Camera(new Point3D(0,0,0), scene.RoutinX(scene.get_camera().get_Vup(),-50),
+        //       scene.RoutinX(scene.get_camera().get_Vto(),-50)));
+        //the top of table
         Point3D Tabl_A = new Point3D(-60, -100, -51);
         Point3D Tabl_B = new Point3D(-60, 100, -51);
         Point3D Tabl_C = new Point3D(-80, 100, -51);
@@ -71,7 +82,7 @@ public class TableTest {
         Point3D Tabl_G = new Point3D(-80, 100, -151);
         Point3D Tabl_H = new Point3D(-80, -100, -151);
 
-        List<Quadrilateral> Table = qube(Tabl_A, Tabl_B, Tabl_C, Tabl_D, Tabl_E, Tabl_F, Tabl_G, Tabl_H);
+        List<Quadrilateral> Table = cube(Tabl_A, Tabl_B, Tabl_C, Tabl_D, Tabl_E, Tabl_F, Tabl_G, Tabl_H);
 
         scene.addGeometry(Table.get(0));
         scene.addGeometry(Table.get(1));
@@ -80,6 +91,7 @@ public class TableTest {
         scene.addGeometry(Table.get(4));
         scene.addGeometry(Table.get(5));
 
+        //the front left leg
         Point3D Leg_front_left_A = new Point3D(-80, -90, -61);
         Point3D Leg_front_left_B = add_point(Leg_front_left_A, 0, 15, 0);//new Point3D(-80, -75, -61);
         Point3D Leg_front_left_C = new Point3D(-240, -75, -61);
@@ -89,7 +101,7 @@ public class TableTest {
         Point3D Leg_front_left_G = new Point3D(-240, -75, -76);
         Point3D Leg_front_left_H = new Point3D(-240, -90, -76);
 
-        List<Quadrilateral> Leg_front_left = qube(Leg_front_left_A, Leg_front_left_B, Leg_front_left_C,
+        List<Quadrilateral> Leg_front_left = cube(Leg_front_left_A, Leg_front_left_B, Leg_front_left_C,
                 Leg_front_left_D, Leg_front_left_E, Leg_front_left_F, Leg_front_left_G, Leg_front_left_H);
 
         scene.addGeometry(Leg_front_left.get(0));
@@ -99,6 +111,7 @@ public class TableTest {
         scene.addGeometry(Leg_front_left.get(4));
         scene.addGeometry(Leg_front_left.get(5));
 
+        //the front right leg
         Point3D Leg_front_right_A = new Point3D(-80, 75, -61);
         Point3D Leg_front_right_B = new Point3D(-80, 90, -61);
         Point3D Leg_front_right_G = new Point3D(-240, 90, -76);
@@ -108,7 +121,7 @@ public class TableTest {
         Point3D Leg_front_right_F = add_point(Leg_front_right_G, 160, 0.0, 0.0);
         Point3D Leg_front_right_H = add_point(Leg_front_right_G, 0, -15, 0.0);
 
-        List<Quadrilateral> Leg_frong_right = qube(Leg_front_right_A, Leg_front_right_B, Leg_front_right_C, Leg_front_right_D
+        List<Quadrilateral> Leg_frong_right = cube(Leg_front_right_A, Leg_front_right_B, Leg_front_right_C, Leg_front_right_D
                 , Leg_front_right_E, Leg_front_right_F, Leg_front_right_G, Leg_front_right_H);
 
         scene.addGeometry(Leg_frong_right.get(0));
@@ -118,6 +131,7 @@ public class TableTest {
         scene.addGeometry(Leg_frong_right.get(4));
         scene.addGeometry(Leg_frong_right.get(5));
 
+        //the back left leg
         Point3D Leg_back_left_A = new Point3D(-80, -90, -126);
         Point3D Leg_back_left_G = new Point3D(-240, -75, -141);
         Point3D Leg_back_left_B = add_point(Leg_back_left_A, 0, 15, 0);
@@ -127,7 +141,7 @@ public class TableTest {
         Point3D Leg_back_left_F = add_point(Leg_back_left_G, 160, 0.0, 0.0);
         Point3D Leg_back_left_H = add_point(Leg_back_left_G, 0, -15, 0.0);
 
-        List<Quadrilateral> Leg_back_left = qube(Leg_back_left_A, Leg_back_left_B, Leg_back_left_C, Leg_back_left_D,
+        List<Quadrilateral> Leg_back_left = cube(Leg_back_left_A, Leg_back_left_B, Leg_back_left_C, Leg_back_left_D,
                 Leg_back_left_E, Leg_back_left_F, Leg_back_left_G, Leg_back_left_H);
 
         scene.addGeometry(Leg_back_left.get(0));
@@ -137,6 +151,7 @@ public class TableTest {
         scene.addGeometry(Leg_back_left.get(4));
         scene.addGeometry(Leg_back_left.get(5));
 
+        //the back right leg
         Point3D Leg_back_right_A = new Point3D(-80, 75, -126);
         Point3D Leg_back_right_G = new Point3D(-240, 90, -141);
         Point3D Leg_back_right_B = add_point(Leg_back_right_A, 0, 15, 0);
@@ -146,7 +161,7 @@ public class TableTest {
         Point3D Leg_back_right_F = add_point(Leg_back_right_G, 160, 0, 0);
         Point3D Leg_back_right_H = add_point(Leg_back_right_G, 0, -15, 0);
 
-        List<Quadrilateral> Leg_back_right = qube(Leg_back_right_A, Leg_back_right_B, Leg_back_right_C, Leg_back_right_D,
+        List<Quadrilateral> Leg_back_right = cube(Leg_back_right_A, Leg_back_right_B, Leg_back_right_C, Leg_back_right_D,
                 Leg_back_right_E, Leg_back_right_F, Leg_back_right_G, Leg_back_right_H);
 
         scene.addGeometry(Leg_back_right.get(0));
@@ -164,6 +179,7 @@ public class TableTest {
 
         scene.addLight(new SpotLight(new Color(150, 100, 100), new Point3D(240, 50, -50),
                 0.1, 0.00001, 0.000005, new Vector(-2, 0, -3)));
+        scene.addLight(new DirectionalLight(new Color(100, 0, 102), new Vector(-1, -0.5, 0)));
 
         ImageWriter imageWriter = new ImageWriter("Table test", 500, 500, 500, 500);
         Render render = new Render(imageWriter, scene);
